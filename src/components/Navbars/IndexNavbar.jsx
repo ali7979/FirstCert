@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import { useContext } from "react";
+import { useContext,useEffect } from "react";
 import { useHistory, Link } from 'react-router-dom';
 import {
   Button,
@@ -62,7 +62,12 @@ function IndexNavbar() {
 
   const handleToggleDarkMode = () => {
     setTheme(!theme);
+    setNavbarCollapse(false);
+    document.documentElement.classList.remove("nav-open");
   };
+  useEffect(() => {
+    document.body.className = theme ? "dark-mode" : "light-mode";
+  }, [theme]);
 
 
   return (
@@ -145,6 +150,15 @@ function IndexNavbar() {
                         onClick={handleLinkClick}
                       >
                         ISO 9001
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        className="dropdown-item"
+                        to="/cmmi"
+                        onClick={handleLinkClick}
+                      >
+                        CMMI
                       </Link>
                     </li>
                   </ul>
@@ -232,7 +246,7 @@ function IndexNavbar() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="/aboutus"
+                        to="/iso27001"
                         onClick={handleLinkClick}
                       >
                         ISO 27001
@@ -241,7 +255,7 @@ function IndexNavbar() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="/aboutus"
+                        to="/gdpr"
                         onClick={handleLinkClick}
                       >
                         GDPR
@@ -250,7 +264,7 @@ function IndexNavbar() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="/aboutus"
+                        to="/pci"
                         onClick={handleLinkClick}
                       >
                         PCI
@@ -259,7 +273,7 @@ function IndexNavbar() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="/aboutus"
+                        to="/soc"
                         onClick={handleLinkClick}
                       >
                         SOC
@@ -268,7 +282,7 @@ function IndexNavbar() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="/aboutus"
+                        to="/vapt"
                         onClick={handleLinkClick}
                       >
                         VAPT
@@ -307,15 +321,16 @@ function IndexNavbar() {
                 <i className="fa fa-users" />About us
               </NavLink>
             </NavItem>
-            <NavItem style={{ margin: "1em" }}>
-              <CustomInput
-                type="switch"
-                id="exampleCustomSwitch1"
-                onChange={handleToggleDarkMode}
-                onClick={handleLinkClick}
-                name="customSwitch1"
-                label={<i className="fa fa-moon" style={{ fontSize: "1.5em", color: theme ? "white" : "black" }}></i>}
-              />
+            <NavItem >
+              <NavLink
+                
+              tag={Link}>
+             {theme ?<i className="fas fa-sun" onClick={handleToggleDarkMode} style={{ fontSize: "1.5em", color: theme ? "white" : "black" }} ><p className="mx-1"> Light Mode</p></i> 
+             :
+             <i className="fa-solid fa-moon fa-lg" onClick={handleToggleDarkMode} style={{ fontSize: "1.5em", color: theme ? "white" : "black" }}><p className="mx-1"> Dark Mode</p></i>
+            } 
+
+            </NavLink>
             </NavItem>
             <NavItem>
               <Button

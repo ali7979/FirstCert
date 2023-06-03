@@ -45,8 +45,8 @@
       <CardBody>
       <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >HIPAA</h6></CardSubtitle>
   
-          <CardTitle className='text-white'><h3><span style={{letterSpacing:'4px',fontWeight:'400'}}>HIPAA</span> Apply In Various</h3></CardTitle>
-          <CardText className='text-white '><h3 style={{fontWeight:800,marginTop:0}}>"Companies"</h3></CardText>
+          <h3 className='text-white'><span style={{letterSpacing:'4px',fontWeight:'400'}}>HIPAA</span> Apply In Various</h3>
+          <h3 className='text-white' style={{fontWeight:800,marginTop:0}}>"Companies"</h3>
           <hr className="divider-line" />
           <CardSubtitle className="mt-md-5 mt-sx-2 text-white" ><p>"The United States' Health Insurance Portability and Accountability Act of 1996 contains data privacy and security safeguards for protecting medical information. After that, it was changed in 2009 to become the Hitech Act and again in 2013 to become the Omnibus Rule. By lowering costs, easing administrative burdens, and enhancing the privacy and security of Protected Health Information, HIPAA sought to transform the healthcare sector (PHI). According to their merits, those who comply with the law's standards may receive a HIPAA Compliance Certification." </p></CardSubtitle>
   
@@ -89,7 +89,7 @@
     <CardHeader style={{backgroundColor:'#159895',color:'white'}}><h6>WHO NEEDS TO COMPLY WITH HIPAA CHECKLIST ?</h6></CardHeader>
     <CardBody>
         <CardTitle><h5 style={{fontWeight:'400'}}>Any organization or individual who works in or with the healthcare industry or who has access to Protected Health Information (PHI) of US individuals – broadly classified as Covered Entities, Business Associates & Sub-Contractors. This includes:</h5></CardTitle>
-        <CardText>
+      
            <ul style={{lineHeight: "1", margin: "0", fontSize:'1.5em'}}>
   <li style={{fontWeight:"bold", margin: "0"}}><h6 style={{fontWeight:'400', margin: "0"}}>
 Principles of HACCP - There are 7 principles of HACCP. Implementation of these principles is very important to have an effective system.</h6></li>
@@ -105,7 +105,7 @@ PRP and OPRP - The controls which are required and the extent to which the contr
 Traceability - Traceability of any product in the food lifecycle to its very start and to understand the hazard generation point and to rectify issues is very critical.</h6></li>
   <li style={{fontWeight:"bold", margin: "0"}}><h6 style={{fontWeight:'400', margin: "0"}}>
 Integration with various international Standards - HACCP is a basic platform for various international standard under Codex Alimentarius.</h6></li>
-</ul></CardText>
+</ul>
     </CardBody>
 </Card>
 </Col>

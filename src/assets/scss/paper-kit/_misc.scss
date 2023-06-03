@@ -207,3 +207,28 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     position: relative;
     z-index: 2;
 }
+
+body.dark-mode  {
+  color: white;
+  background-color: #181D31;
+}
+.dark-mode
+{
+  
+  .section{
+    background: #181D31;
+  }
+  .navbar .navbar-collapse:after {
+  background: #181D31;
+  }
+  .dropdown-menu .dropdown-item {
+    color:white !important;
+}
+.dropdown.show .dropdown-menu{
+    background-color: #181D31;
+}
+.navbar {
+  background-color: rgb(8 17 42 / 34%);
+  backdrop-filter: blur(10px) saturate(160%) contrast(55%) brightness(80%);
+}
+}

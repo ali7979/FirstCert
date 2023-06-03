@@ -18,6 +18,12 @@ import Halal from "views/services/Halal";
 import Haccp from "views/services/Haccp";
 import Iso22000 from "views/services/Iso22000";
 import ScrollToTop from "components/ScrollToTop";
+import Cmmi from "views/services/Cmmi";
+import Iso27001 from "views/services/cybersecurity/Iso27001";
+import Gdpr from "views/services/cybersecurity/Gdpr";
+import Pci from "views/services/cybersecurity/Pci";
+import Soc from "views/services/cybersecurity/Soc";
+import Vapt from "views/services/cybersecurity/Vapt";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 export const ThemeContext = createContext();
@@ -29,7 +35,7 @@ const App = () => {
     <BrowserRouter>
          <ScrollToTop/>
       <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className={theme ? "light" : "dark"}>
+      
         <Switch>
      
           <Route path="/index"  primary={false} render={(props) => <Index {...props} />} />
@@ -49,6 +55,11 @@ const App = () => {
             path="/quality"
             primary={false}
             render={(props) =>  <Quality/>}
+          />
+          <Route
+            path="/cmmi"
+            primary={false}
+            render={(props) =>  <Cmmi/>}
           />
           <Route
             path="/iso45001"
@@ -84,10 +95,35 @@ const App = () => {
             primary={false}
             render={(props) =>  <Iso22000/>}
           />
+           <Route
+            path="/iso27001"
+            primary={false}
+            render={(props) =>  <Iso27001/>}
+          />
+           <Route
+            path="/gdpr"
+            primary={false}
+            render={(props) =>  <Gdpr/>}
+          />
+           <Route
+            path="/pci"
+            primary={false}
+            render={(props) =>  <Pci/>}
+          />
+           <Route
+            path="/soc"
+            primary={false}
+            render={(props) =>  <Soc/>}
+          />
+           <Route
+            path="/vapt"
+            primary={false}
+            render={(props) =>  <Vapt/>}
+          />
 
           <Redirect to="/index" />
         </Switch>
-        </div>
+        
       </ThemeContext.Provider>
     </BrowserRouter>
   );

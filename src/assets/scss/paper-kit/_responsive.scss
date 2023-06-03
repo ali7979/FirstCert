@@ -452,6 +452,20 @@
     color: #000000 !important;
     
 }
+.dark-mode
+{
+    .dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:visited, 
+.dropdown-menu .dropdown-item:hover {
+    color: rgb(187, 187, 187)!important;
+    
+}
+.drhead.dropdown-item {
+color: rgb(187, 187, 187);
+}
+
+}
 
   
 .drhead.dropdown-item {
