@@ -24,6 +24,8 @@ import Gdpr from "views/services/cybersecurity/Gdpr";
 import Pci from "views/services/cybersecurity/Pci";
 import Soc from "views/services/cybersecurity/Soc";
 import Vapt from "views/services/cybersecurity/Vapt";
+import CeMarking from "views/services/CeMarking";
+import ServicesPage from "views/services/ServicesPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 export const ThemeContext = createContext();
@@ -119,6 +121,16 @@ const App = () => {
             path="/vapt"
             primary={false}
             render={(props) =>  <Vapt/>}
+          />
+           <Route
+            path="/cemarking"
+            primary={false}
+            render={(props) =>  <CeMarking/>}
+          />
+           <Route
+            path="/services"
+            primary={false}
+            render={(props) =>  <ServicesPage/>}
           />
 
           <Redirect to="/index" />

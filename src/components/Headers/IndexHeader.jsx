@@ -36,7 +36,7 @@ function IndexHeader() {
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">Elevate your certification</h1>
+              <h1 className="presentation-title">Elevate Your Certification</h1>
               <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
@@ -84,7 +84,7 @@ function IndexHeader() {
       <Services/></div>
      
       <Clients/>
-      <DemoFooter/>
+      <DemoFooter />
       
     </>
   );

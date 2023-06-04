@@ -85,37 +85,37 @@ function Haccp() {
     <ul style={{ lineHeight: '1', margin: '0', fontSize: '1.5em' }}>
       <li >
         <h6 style={{ fontWeight: 'bold', margin: '0' ,letterSpacing:'2px'}}>
-          Principles of HACCP - There are 7 principles of HACCP. Implementation of these principles is very important to have an effective system.
+        <u>  Principles of HACCP </u> - There are 7 principles of HACCP. Implementation of these principles is very important to have an effective system.
         </h6>
       </li>
       <li >
         <h6 style={{ fontWeight: 'bold', margin: '0' ,letterSpacing:'2px'}}>
-          Identification of the Hazard – It is very crucial to recognize hazards and classify these hazards into Physical, Biological and Chemical hazards. This will help us to understand the priority and impact of the hazard.
+        <u> Identification of the Hazard</u>  – It is very crucial to recognize hazards and classify these hazards into Physical, Biological and Chemical hazards. This will help us to understand the priority and impact of the hazard.
         </h6>
       </li>
       <li >
         <h6 style={{ fontWeight: 'bold', margin: '0' ,letterSpacing:'2px'}}>
-          Critical Control Points – Analysis of the controls required in measurable terms with defining of maximum and minimum levels of acceptance.
+         <u>Critical Control Points </u> – Analysis of the controls required in measurable terms with defining of maximum and minimum levels of acceptance.
         </h6>
       </li>
       <li >
         <h6 style={{ fontWeight: 'bold', margin: '0' ,letterSpacing:'2px'}}>
-          HACCP Plan - The 12 steps of HACCP are required to be implemented as a part of the plan. Recognition of leaders to do the same is also crucial.
+         <u>HACCP Plan</u>  - The 12 steps of HACCP are required to be implemented as a part of the plan. Recognition of leaders to do the same is also crucial.
         </h6>
       </li>
       <li>
         <h6 style={{ fontWeight: 'bold', margin: '0' ,letterSpacing:'2px'}}>
-          PRP and OPRP - The controls which are required and the extent to which the control is required must be understood and implemented. Risk calculation to be carried out based on the classification of hazards and priority of its impact.
+        <u>  PRP and OPRP </u> - The controls which are required and the extent to which the control is required must be understood and implemented. Risk calculation to be carried out based on the classification of hazards and priority of its impact.
         </h6>
       </li>
       <li>
         <h6 style={{ fontWeight: 'bold', margin: '0' ,letterSpacing:'2px'}}>
-          Traceability - Traceability of any product in the food lifecycle to its very start and to understand the hazard generation point and to rectify issues is very critical.
+       <u>   Traceability </u> - Traceability of any product in the food lifecycle to its very start and to understand the hazard generation point and to rectify issues is very critical.
         </h6>
       </li>
       <li >
         <h6 style={{ fontWeight: 'bold', margin: '0',letterSpacing:'2px' }}>
-          Integration with various international Standards - HACCP is a basic platform for various international standard under Codex Alimentarius.
+          <u>Integration with various international Standards</u>  - HACCP is a basic platform for various international standard under Codex Alimentarius.
         </h6>
       </li>
     </ul>

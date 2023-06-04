@@ -298,7 +298,7 @@ function IndexNavbar() {
                     <li>
                       <Link
                         class="dropdown-item"
-                        to="/aboutus"
+                        to="/cemarking"
                         onClick={handleLinkClick}
                       >
                         CE MARKING
