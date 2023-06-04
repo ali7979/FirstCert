@@ -62,7 +62,7 @@ function ContactUs() {
                   <i className="nc-icon nc-single-02" />
                 </InputGroupText>
               </InputGroupAddon>
-              <Input name="name" placeholder="Name" type="text" />
+              <Input required name="name" placeholder="Name" type="text" />
             </InputGroup>
           </Col>
           <Col md="6">
@@ -73,7 +73,7 @@ function ContactUs() {
                   <i className="nc-icon nc-email-85" />
                 </InputGroupText>
               </InputGroupAddon>
-              <Input name="email" placeholder="Email" type="text" />
+              <Input  required name="email" placeholder="Email" type="email" />
             </InputGroup>
           </Col>
         </Row>
@@ -81,16 +81,17 @@ function ContactUs() {
             <InputGroup>
               <InputGroupAddon addonType="prepend">
                 <InputGroupText>
-                  <i className="nc-icon nc-phone-85" />
+                  <i className="fa fa-phone" />
                 </InputGroupText>
               </InputGroupAddon>
-              <Input name="phone" placeholder="Phone" type="tel" />
+              <Input required name="phone" placeholder="Phone" type="tel" />
             </InputGroup>
         <label>Message</label>
         <Input name="message"
           placeholder="Tell us your thoughts and feelings..."
           type="textarea"
           rows="4"
+          required
         />
     <Row>
   <Col>

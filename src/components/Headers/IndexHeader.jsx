@@ -64,7 +64,7 @@ function IndexHeader() {
         <h4 className="category category-absolute " style={{fontSize:"1.5em"}}>
 
         
-         What are You Waiting for ?     <Button  color='primary'  className="blurbox btn-round" onClick={scrollToSection}>Get Started<i class="nc-icon nc-minimal-right" aria-hidden="true"></i></Button>
+         What are You Waiting for ?     <Button  color='primary'  className="blurbox btn-round" onClick={scrollToSection}>Get Started<i className="nc-icon nc-minimal-right" aria-hidden="true"></i></Button>
  
           
          

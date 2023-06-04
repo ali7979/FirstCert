@@ -134,15 +134,15 @@ function IndexNavbar() {
                 onMouseEnter={(e) => e.target.style.color = '#57C5B6'}
                 onMouseLeave={(e) => e.target.style.color = theme ? 'white' : 'black'}
               >
-                <i class="fa fa-code-branch"></i>
+                <i className="fa fa-code-branch"></i>
                 Services
               </DropdownToggle>
               <DropdownMenu aria-labelledby="dropdownMenuButton" className="dropdown-info">
                 <li>
-                  <a  class="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
+                  <a  className="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
                     Quality &raquo;
                   </a>
-                  <ul class="dropdown-menu dropdown-submenu">
+                  <ul className="dropdown-menu dropdown-submenu">
                     <li>
                       <Link
                         className="dropdown-item"
@@ -164,10 +164,10 @@ function IndexNavbar() {
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
+                  <a className="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
                     Environment &raquo;
                   </a>
-                  <ul class="dropdown-menu dropdown-submenu">
+                  <ul className="dropdown-menu dropdown-submenu">
                     <li>
                       <Link
                         className="dropdown-item"
@@ -180,10 +180,10 @@ function IndexNavbar() {
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
+                  <a className="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
                     Health and Safety &raquo;
                   </a>
-                  <ul class="dropdown-menu dropdown-submenu">
+                  <ul className="dropdown-menu dropdown-submenu">
                     <li>
                       <Link
                         className="dropdown-item"
@@ -205,10 +205,10 @@ function IndexNavbar() {
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
+                  <a className="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
                     Food Safety &raquo;
                   </a>
-                  <ul class="dropdown-menu dropdown-submenu">
+                  <ul className="dropdown-menu dropdown-submenu">
                     <li>
                       <Link
                         className="dropdown-item"
@@ -239,10 +239,10 @@ function IndexNavbar() {
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
+                  <a className="dropdown-item drhead" href="#" onClick={e => e.preventDefault()}>
                     Cyber Security &raquo;
                   </a>
-                  <ul class="dropdown-menu dropdown-submenu">
+                  <ul className="dropdown-menu dropdown-submenu">
                     <li>
                       <Link
                         className="dropdown-item"
@@ -291,13 +291,13 @@ function IndexNavbar() {
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item drhead" onClick={e => e.preventDefault()} href="#">
+                  <a className="dropdown-item drhead" onClick={e => e.preventDefault()} href="#">
                     Product Certification &raquo;
                   </a>
-                  <ul class="dropdown-menu dropdown-submenu">
+                  <ul className="dropdown-menu dropdown-submenu">
                     <li>
                       <Link
-                        class="dropdown-item"
+                        className="dropdown-item"
                         to="/cemarking"
                         onClick={handleLinkClick}
                       >
@@ -324,10 +324,10 @@ function IndexNavbar() {
             <NavItem >
               <NavLink
                 
-              tag={Link}>
-             {theme ?<i className="fas fa-sun" onClick={handleToggleDarkMode} style={{ fontSize: "1.5em", color: theme ? "white" : "black" }} ><p className="mx-1"> Light Mode</p></i> 
+              tag="span">
+             {theme ?<i className="fas fa-sun" onClick={handleToggleDarkMode} style={{ fontSize: "1.5em", color: theme ? "white" : "black",cursor: 'pointer'  }} ><p className="mx-1"> Light Mode</p></i> 
              :
-             <i className="fa-solid fa-moon fa-lg" onClick={handleToggleDarkMode} style={{ fontSize: "1.5em", color: theme ? "white" : "black" }}><p className="mx-1"> Dark Mode</p></i>
+             <i className="fa-solid fa-moon fa-lg" onClick={handleToggleDarkMode} style={{ fontSize: "1.5em", color: theme ? "white" : "black" ,cursor: 'pointer' }}><p className="mx-1"> Dark Mode</p></i>
             } 
 
             </NavLink>
