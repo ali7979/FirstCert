@@ -7,6 +7,24 @@ import { Row, Container } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 
 function DemoFooter() {
+  function openGmail(event) {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+    const appUrl = "googlegmail://co?to=info@firstcertification.com";
+    const webUrl = "https://mail.google.com/mail/?view=cm&to=info@firstcertification.com";
+    
+    if (isMobile) {
+      event.preventDefault();
+      window.location.href = appUrl;
+    } else {
+      const webWindow = window.open(webUrl, "_blank");
+      if (!webWindow || webWindow.closed || typeof webWindow.closed === "undefined") {
+        event.preventDefault();
+        window.location.href = appUrl;
+      }
+    }
+  }
   return (
     
         <div class="ftsec mt-5">
@@ -43,10 +61,10 @@ function DemoFooter() {
               Our Services
             </h6>
             <p >
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/services'>Quality</NavLink>
+            <NavLink  style={{fontWeight:'500',color:'black'}} to='/quality'>Quality</NavLink>
             </p>
             <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/services'>Environment</NavLink>
+            <NavLink  style={{fontWeight:'500',color:'black'}} to='/environment'>Environment</NavLink>
             </p>
             <p>
             <NavLink  style={{fontWeight:'500',color:'black'}} to='/services'>Health & Safety</NavLink>
@@ -58,7 +76,7 @@ function DemoFooter() {
             <NavLink  style={{fontWeight:'500',color:'black'}} to='/services'>Cyber Security</NavLink>
             </p>
             <p>
-            <NavLink  style={{fontWeight:'500',color:'black'}} to='/services'>CE Marking</NavLink>
+            <NavLink  style={{fontWeight:'500',color:'black'}} to='/cemarking'>CE Marking</NavLink>
             </p>
           </div>
 
@@ -101,7 +119,7 @@ function DemoFooter() {
            
               <a class="btn btn-outline-light btn-floating m-1 text-dark" 
    role="button" 
-   href="https://web.whatsapp.com/send?phone=+91 8073358319" 
+   href="https://api.whatsapp.com/send?phone=918073358319&text=Hi FirstCert! I want to know your Services "
    target="_blank"
 >
   <i class="fab fa-whatsapp"></i>
@@ -112,9 +130,8 @@ function DemoFooter() {
                class="btn btn-outline-light btn-floating m-1 text-dark"
                
                role="button"
-               href="https://mail.google.com/mail/?view=cm&to=info@firstcertification.com" 
-               target="_blank"
-               ><i class="fas fa-envelope"></i
+               href="https://mail.google.com/mail/?view=cm&to=info@firstcertification.com"      target="_blank"
+               onclick="openGmail(event)" ><i class="fas fa-envelope"></i
               ></a>
 
            

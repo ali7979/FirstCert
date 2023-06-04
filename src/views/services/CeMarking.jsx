@@ -23,20 +23,23 @@ function CeMarking() {
       <div className="section landing-section">
       <Container style={{marginTop:"8em"}}>
   <Row >
-  
- 
-    <Col md="6"  >
+  <Col md="6" >
       {/* Add your image here */}
-      <img className='ce' src={ce} alt="Your Image" style={{ maxWidth: "78%",
-  height: "100%",
+      <img  src={ce} alt="Your Image" style={{ maxWidth: "90%",
+  height: "auto",
+  
+  
   }}/>
     </Col>
+ 
+   
     <Col md="6" className='my-auto'>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >CE-Marking  Certifications</h1>
       <p className=' ml-md-5' style={{fontWeight:'400'}}>Achieve this certification in a hassle-free approach.Simpler,Faster and Affordable</p>
       <Button color='primary' size="lg" className=" mt-3 ml-md-5 btn-round"  onClick={() => history.push('./contact')} >Enquire Now</Button>
 
     </Col>
+   
     
    
   </Row>
