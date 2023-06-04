@@ -2,6 +2,7 @@ import React from 'react'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import cs1 from 'assets/img/services/cs1.png'
+import think from 'assets/img/services/think.png'
 
 import { useHistory} from 'react-router-dom';
 
@@ -115,7 +116,16 @@ function Soc() {
 </Col>
 </Row>
 
+<Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 9001 CERTIFICATION?</span></h1>
+  <Col md="5"className='mt-5'>
+      {/* Add your image here */}
+      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+  height: "auto"}}/>
+  </Col>
 
+  <Col md="7" className='my-auto blurbox' >
+    <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px',fontSize:'1.3em'}}>SOC is widely applicable for service organizations like Payroll Processors, Medical Claims Processors, Data Analytic Providers, Loan Servicing Companies, Data center Companies, Third-Party Administrators (Retirement Plans, Medical Benefits, Pharmacy Benefits), Bank Trust Departments, Real Estate Title Companies, Advertising Companies, Insurance Companies, Loan Servicing, Hospice, Secure Printing, Software-as-a-Service (Saas) companies that may impact the financial s & security of their user entities.</h3></Col>
+</Row>
 
 
 </Container>

@@ -493,7 +493,12 @@
         background: $bg-danger;
     }
 }
-
+.dark-mode{
+    .card{
+        background-color: #00afb7;
+        color:#FFF;
+    }
+}
 .btn-center{
     text-align: center;
 }
