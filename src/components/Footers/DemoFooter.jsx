@@ -29,7 +29,7 @@ function DemoFooter() {
     
         <div className="ftsec mt-5">
   <footer
-          className="text-center text-lg-start text-black blurbox "
+          className="text-center text-lg-start text-black blurbox animated fadeIn"
           style={{
           marginTop: "6em"}}  >
             <Container>
@@ -96,7 +96,7 @@ function DemoFooter() {
         </div>
       </section>
 
-      <hr className="my-3"/>
+      <hr className="my-3 animated fadeIn"/>
 
       <section className="p-3 pt-0">
         <div className="row d-flex align-items-center">

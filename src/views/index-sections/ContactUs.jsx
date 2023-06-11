@@ -1,7 +1,10 @@
-import {React,useState} from 'react'
+import React, { useEffect } from 'react'
+import {useState} from 'react'
 import contactus from '../../assets/img/contactus.png'
 import emailjs from 'emailjs-com';
 import { Alert } from 'reactstrap';
+import 'aos/dist/aos.css'
+import Aos from 'aos';
 import {
     Button,
     Form,
@@ -15,8 +18,8 @@ import {
   } from "reactstrap";
   import IndexNavbar from 'components/Navbars/IndexNavbar';
 import DemoFooter from 'components/Footers/DemoFooter';
-import { Redirect } from 'react-router-dom';
 function ContactUs() {
+
   const [visible, setVisible] = useState(false); // State variable for alert visibility
 
   const onDismiss = () => {
@@ -35,6 +38,10 @@ function ContactUs() {
             console.log('Error sending email:', error);
           });
       };
+      useEffect(()=>
+      {
+        Aos.init();
+      },[])
   return (
     <>
     <IndexNavbar/>
@@ -45,12 +52,12 @@ function ContactUs() {
           </Alert>
       <Container style={{marginTop:"4em"}}>
   <Row className='my-auto'>
-    <Col md="6" className='my-auto'>
+    <Col md="6" className='my-auto'data-aos="flip-down">
       {/* Add your image here */}
       <img  src={contactus} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
     </Col>
-    <Col md="6" >
+    <Col md="6" data-aos="flip-left">
       <h1 className="text-center" style={{fontFamily:"'Raleway',sans-serif",fontWeight:'400',letterSpacing:'2px'}}>Keep in touch?</h1>
       <Form className="contact-form" onSubmit={sendEmail}>
         <Row>

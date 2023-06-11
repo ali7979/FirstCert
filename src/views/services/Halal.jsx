@@ -1,10 +1,11 @@
-import React from "react";
+import {React,useEffect} from 'react'
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import DemoFooter from "components/Footers/DemoFooter";
 import halal from "assets/img/services/halal.png";
 import think from "assets/img/services/think.png";
 import { useHistory} from 'react-router-dom';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 import {
   Card,
@@ -17,6 +18,10 @@ import {
 
 import { Button, CardHeader, Container, Row, Col } from "reactstrap";
 function Halal() {
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   const history = useHistory();
 
   return (
@@ -53,7 +58,7 @@ function Halal() {
               </Col>
             </Row>
             <Row className="mt-md-5">
-              <Col md="6" className="my-auto">
+              <Col md="6" className="my-auto" data-aos="zoom-out-left">
                 <h1
                   style={{
                     fontWeight: "bold",
@@ -108,7 +113,7 @@ function Halal() {
                   Enquire Now
                 </Button>
               </Col>
-              <Col md="6">
+              <Col md="6" data-aos="flip-down">
                 <Card
                   className="mx-md-auto my-md-auto"
                   style={{
@@ -173,13 +178,13 @@ function Halal() {
               </h1>
               <Col md="5" className="mt-5">
                 {/* Add your image here */}
-                <img
+                <img data-aos="zoom-out-down"
                   src={think}
                   alt="Your Image"
                   style={{ maxWidth: "100%", height: "auto" }}
                 />
               </Col>
-              <Col md="7" className="my-auto blurbox">
+              <Col md="7" data-aos="fade-down" className="my-auto blurbox">
                 <h3
                   className="text-left"
                   style={{
@@ -210,7 +215,7 @@ function Halal() {
         </div>
       </div>
       <Row className="my-3 mx-auto">
-        <Col md="10 mx-auto" className="mt-5">
+        <Col md="10 mx-auto" className="mt-5"data-aos="flip-up">
           <Card>
             <CardHeader style={{ backgroundColor: "#1A5F7A", color: "white" }}>
               <h6>

@@ -125,7 +125,7 @@ function Iso27001() {
   </Col>
 
   <Col md="7" className='my-auto blurbox' >
-    <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> The majority of sectors where information or data is an asset can use the standard. Software development, Cloud & IT support (product & service firms), financial industries, telecom industries, pharmaceutical, health organisations, and government bodies are among the businesses choosing ISO 27001:2013, according to a market survey.</h3>
+    <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> The majority of sectors where information or data is an asset can use the standard. Software development, Cloud & IT support (product & service firms), financial industries, telecom industries, pharmaceutical, health organisations, and government bodies are among the businesses choosing ISO 27001:2022, according to a market survey.</h3>
   </Col>
 </Row>
 

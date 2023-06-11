@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import cp from "../../assets/img/cp.png"
 import logo from "../../assets/img/firstcertlogo.png"
 import {
@@ -8,7 +8,14 @@ import {
     Col,
     Button
   } from "reactstrap";
+  import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 function CompanyProfile() {
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   const [liveDemo, setLiveDemo] = React.useState(false);
   return (
     <div className='section '>
@@ -20,7 +27,7 @@ function CompanyProfile() {
                 <img src={cp} alt="cp" style={{maxWidth: "100%", height: "auto"}}/>
       </div>
             </Col>
-            <Col md="6" className='text-left'>
+            <Col md="6" className='text-left' data-aos="fade-up">
                 <h1 style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900",color:"#51cbce",letterSpacing:"2px"}}>COMPANY PROFILE</h1>
               
                 <h4 className='text-middle ' style={{letterSpacing:"0.8px",fontWeight:"400"}}>

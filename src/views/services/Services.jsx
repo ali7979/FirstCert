@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react'
 
 import grad from "assets/img/services/wave.svg";
 import i1 from "assets/img/quality1.png";
@@ -8,11 +8,13 @@ import i5 from "assets/img/services/5.png";
 import i6 from "assets/img/services/6.png";
 import i7 from "assets/img/services/cyber security.png";
 
+import 'aos/dist/aos.css'
 import { Card, CardBody, CardText, Col } from "reactstrap";
 
 import { CardImg, Container, Row } from "reactstrap";
 import { Link } from "react-router-dom";
 function Services() {
+ 
   return (
     <div>
       {/* <h1 style={{fontStyle:"'Raleway', sans-serif",fontWeight:'400'}} className='text-center my-2'>Our Services</h1> */}
@@ -40,7 +42,7 @@ function Services() {
           borderBottomRightRadius: "40rem 25rem",
         }}
       >
-        <Row className="mx-auto  justify-content-center">
+        <Row className="mx-auto  justify-content-center" data-aos="fade-up">
           <Card
             className="blurbox m-5"
             style={{
@@ -50,7 +52,7 @@ function Services() {
           >
             <CardImg top src={i1} alt="..." />
             <div className="card-label">Quality</div>
-            <CardBody>
+            <CardBody  data-aos="zoom-in">
             
                 <ul>
                   <li>
@@ -93,7 +95,7 @@ function Services() {
           >
             <CardImg top src={i6} alt="..." />
             <div className="card-label">Environment</div>
-            <CardBody>
+            <CardBody  data-aos="zoom-in">
             
                 <ul>
                   <li>
@@ -122,7 +124,7 @@ function Services() {
           >
             <CardImg top src={i3} alt="..." />
             <div className="card-label">Health & Safety</div>
-            <CardBody>
+            <CardBody  data-aos="zoom-in">
               
                 <ul>
                   <li>
@@ -156,7 +158,7 @@ function Services() {
             </CardBody>
           </Card>
         </Row>
-        <Row className="mx-auto justify-content-center">
+        <Row className="mx-auto justify-content-center" data-aos="fade-up">
           <Card
             className="blurbox m-5"
             style={{
@@ -166,7 +168,7 @@ function Services() {
           >
             <CardImg top src={i4} alt="..." />
             <div className="card-label">Food Safety</div>
-            <CardBody>
+            <CardBody data-aos="zoom-in">
             
                 <ul>
                   <li>
@@ -222,7 +224,7 @@ function Services() {
           >
             <CardImg top src={i7} alt="..." />
             <div className="card-label">Cyber Security</div>
-            <CardBody>
+            <CardBody data-aos="zoom-in">
               
                 <Row>
                   <Col md="6">
@@ -292,7 +294,7 @@ function Services() {
           >
             <CardImg top src={i5} alt="..." />
             <div className="card-label">Product Certification</div>
-            <CardBody>
+            <CardBody data-aos="zoom-in">
               
                 <ul>
                   <li><Link

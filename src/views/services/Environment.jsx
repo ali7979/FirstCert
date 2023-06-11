@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import S14001 from 'assets/img/services/iso.png'
@@ -11,7 +11,8 @@ import i13 from 'assets/img/services/i13.png'
 import i14 from 'assets/img/services/i14.png'
 import i5 from 'assets/img/services/5.png'
 import { useHistory} from 'react-router-dom';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, CardLink } from 'reactstrap';
 
@@ -24,7 +25,10 @@ import {
 } from "reactstrap";
 function Environment() {
   const history = useHistory();
-
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   return (
     <div>
       <IndexNavbar/>
@@ -48,7 +52,7 @@ function Environment() {
   </Row>
 <Row className='mt-md-5'>
 
-<Col md="6" className='my-auto' >
+<Col md="6" className='my-auto'data-aos="zoom-out-left" >
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h1>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
@@ -64,7 +68,7 @@ function Environment() {
 <Button color='primary' size="lg" className=" my-3 btn-round" onClick={() => history.push('./contact')}>Enquire Now</Button>
 
 </Col>
-<Col md="6" className='mt-md-3'>
+<Col md="6" className='mt-md-3'data-aos="flip-down">
 <Card   className='ml-md-5 my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"3px"}}><h6>ISO 14001</h6></CardSubtitle>
@@ -79,7 +83,7 @@ function Environment() {
   </Col>
 </Row>
 <Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 14001 CERTIFICATION?</span></h1>
-<Col md="7" className='my-auto blurbox' >
+<Col md="7" className='my-auto blurbox' data-aos="fade-down" >
     <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> EMS can be achieved by any industry irrespective of size and location.EMS is applicable to:
 <span  style={{fontWeight:'bold'}}>
 Renewable Energy sector,
@@ -92,7 +96,7 @@ Textile Industry</span></h3>
  
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+      <img  data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
   </Col>
 
@@ -109,25 +113,25 @@ Textile Industry</span></h3>
 <Container fluid style={{backgroundImage: `url(${grad})`,backgroundPosition:'center',backgroundRepeat:'none',backgroundSize:'cover',borderTopLeftRadius:'30rem 25rem',borderBottomRightRadius:'40rem 25rem'}}>
   <Row className='mx-auto  justify-content-center' >
   <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i11} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i11} alt="..." />
   <div className="card-label">Analysis</div>
-  <CardBody>
+  <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Aspect Analysis and Impact Analysis: Analysis of aspects that contribute to destruction of environment resources or atmosphere, conduction of impact studies and enhancement of control measures.</CardText>
   </CardBody>
 </Card>
 
 
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i5} alt="..." />
+  <CardImg data-aos="zoom-in-up"  top src={i5} alt="..." />
   <div className="card-label">Planning</div>
-  <CardBody>
+  <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Implementation of Environmental Performance Planning: Involvement of the entire organization in the execution of management systems.</CardText>
   </CardBody>
 </Card>
 <Card className='blurbox m-5 ' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i1} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i1} alt="..." />
   <div className="card-label">Management</div>
-  <CardBody>
+  <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Resources allocation: Better management of resources in a planned manner to achieve minimal wastes and optimum performance.</CardText>
   </CardBody>
 </Card>
@@ -135,25 +139,25 @@ Textile Industry</span></h3>
 </Row>
 <Row className='mx-auto justify-content-center'>
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i12} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i12} alt="..." />
   <div className="card-label">Performance</div>
-  <CardBody>
+  <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Evaluation: Evaluation of environmental performance by using management tools.</CardText>
   </CardBody>
 </Card>
 
 
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i13} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i13} alt="..." />
   <div className="card-label">Guidance</div>
-  <CardBody>
+  <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}} >Leadership: Involvement of employees as leaders in the management system.</CardText>
   </CardBody>
 </Card>
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i14} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i14} alt="..." />
   <div className="card-label">Precondition</div>
-  <CardBody>
+  <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Legal Requirements Analysis: Meeting All legal Obligations.</CardText>
   </CardBody>
 </Card>

@@ -1,11 +1,12 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import { useHistory} from 'react-router-dom';
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import cmmi from 'assets/img/services/cmmi.png'
 import think from 'assets/img/services/think.png'
 import { Card, CardBody, CardTitle, CardSubtitle, CardText, CardLink } from 'reactstrap';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import {
   Button,
   CardImg,
@@ -15,7 +16,10 @@ import {
 } from "reactstrap";
 function Cmmi() {
   const history = useHistory();
-
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   return (
     <div>
       <IndexNavbar/>
@@ -37,13 +41,8 @@ function Cmmi() {
     
   </Row>
 <Row className='mt-md-5'>
-<Col md="6" className='my-auto' >
+<Col md="6" className='my-auto' data-aos="zoom-out-left">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits of CMMI Certification</h1>
-
-
-
-
-
 
 <ol style={{lineHeight: "1", margin: "0"}}>
   <li className="mt-2" style={{fontWeight:"bold", margin: "0"}}><h5 style={{fontWeight:'400', margin: "0"}}>Improved efficiency and productivity.</h5></li>
@@ -63,7 +62,7 @@ function Cmmi() {
 <Button color='primary'size="lg" className=" my-3 btn-round" onClick={() => history.push('./contact')}>Enquire Now</Button>
 
 </Col>
-<Col md="6" >
+<Col md="6" data-aos="flip-down">
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"3px"}}><h6>CMMI </h6></CardSubtitle>
@@ -83,11 +82,11 @@ CMMI Certification involves a rigorous assessment of the organization's processe
 <Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>CMMI CERTIFICATION?</span></h1>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+      <img   data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
   </Col>
 
-  <Col md="7" className='my-auto blurbox' >
+  <Col md="7" className='my-auto blurbox' data-aos="fade-down">
     <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontSize:'1.3em',fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> 
 CMMI certification is open to organizations of all types and sizes, across various industries. It provides a framework for process improvement and performance excellence. Whether it's a software company, healthcare provider, or manufacturing firm, any organization can pursue CMMI certification. It helps organizations enhance their processes, achieve higher levels of performance, and deliver quality products and services.</h3>
   </Col>

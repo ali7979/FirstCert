@@ -1,9 +1,10 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import iso22000 from 'assets/img/services/iso22000 (2).png'
 import { useHistory} from 'react-router-dom';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 import { Card, CardHeader,CardBody, CardTitle, CardSubtitle, CardText, CardLink } from 'reactstrap';
 
@@ -16,7 +17,10 @@ import {
 } from "reactstrap";
 function Iso22000() {
   const history = useHistory();
-
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   return (
     <div>
       <IndexNavbar/>
@@ -43,7 +47,7 @@ function Iso22000() {
 <Row className='mt-3 mt-md-5'>
 
 
-  <Col md="6" className='my-auto'>
+  <Col md="6" className='my-auto' data-aos="zoom-out-left">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Organization</h1>
 
 <ol style={{lineHeight: "1", margin: "0", paddingLeft: "20px"}}>
@@ -64,7 +68,7 @@ function Iso22000() {
 </Col>
 
 
-<Col md="6" className='my-auto'>
+<Col md="6" className='my-auto' data-aos="flip-down">
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >ISO 22000</h6></CardSubtitle>
@@ -79,7 +83,7 @@ function Iso22000() {
   </Col>
 </Row>
 
-<Row  className='mt-5'>
+<Row  className='mt-5' data-aos="flip-up">
   <Col md="12">
 <Card>
 <CardHeader style={{backgroundColor:'#1A5F7A',color:'white'}}><h6>BENEFITS OF IS0 22000 TO YOUR CUSTOMERS</h6></CardHeader>

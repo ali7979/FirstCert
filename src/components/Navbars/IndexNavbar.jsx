@@ -323,7 +323,8 @@ function IndexNavbar() {
             </NavItem>
             <NavItem >
               <NavLink
-                
+                  onMouseEnter={(e) => e.target.style.color = '#57C5B6'}
+                  onMouseLeave={(e) => e.target.style.color = theme ? 'white' : 'black'}
               tag="span">
              {theme ?<i className="fas fa-sun" onClick={handleToggleDarkMode} style={{ fontSize: "1.5em", color: theme ? "white" : "black",cursor: 'pointer'  }} ><p className="mx-1"> Light Mode</p></i> 
              :

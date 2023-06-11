@@ -1,6 +1,7 @@
 
-import React from "react";
-
+import React, { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 // reactstrap components
 import {
   Card,
@@ -65,6 +66,10 @@ function SectionCarousel() {
     if (animating) return;
     setActiveIndex(newIndex);
   };
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   return (
     <>
       <div className="section pt-o" id="carousel">
@@ -75,7 +80,7 @@ function SectionCarousel() {
           <Col xs="12" md="3" className="mb-2" >
             <h1 style={{fontFamily: "'Raleway', sans-serif",fontWeight:"400"}}>Our Expertise</h1>
           </Col>
-          <Col xs="12" md="9" >
+          <Col xs="12" md="9" data-aos="flip-right">
             
               <Card className="page-carousel mt-4 mt-md-0 ml-md-5 ">
                 <Carousel

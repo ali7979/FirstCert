@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useHistory} from 'react-router-dom';
 
 import IndexNavbar from 'components/Navbars/IndexNavbar'
@@ -22,7 +22,15 @@ import {
   Row,
   Col
 } from "reactstrap";
+
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 function Quality() {
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   const history = useHistory();
 
   return (
@@ -32,12 +40,12 @@ function Quality() {
       <div className="section landing-section">
       <Container style={{marginTop:"2em"}}>
   <Row >
-    <Col md="6" className='mt-5'>
+    <Col md="6" className='mt-5' >
       {/* Add your image here */}
       <img  src={S19001} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
     </Col>
-    <Col md="6" className='my-auto'>
+    <Col md="6" className='my-auto animated fadeIn '>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >ISO 9001 Certifications</h1>
       <p className=' ml-md-5' style={{fontWeight:'400'}}>Achieve this certification in a hassle-free approach.Simpler,Faster and Affordable</p>
       <Button color='primary' size="lg" className=" mt-3 ml-md-5 btn-round"  onClick={() => history.push('./contact')} >Enquire Now</Button>
@@ -46,7 +54,7 @@ function Quality() {
     
   </Row>
 <Row className='mt-md-5'>
-<Col md="6" className='my-auto' >
+<Col md="6" className='my-auto ' data-aos="zoom-out-left">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h1>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
@@ -63,7 +71,7 @@ function Quality() {
 <Button color='primary'size="lg" className=" my-3 btn-round" onClick={() => history.push('./contact')}>Enquire Now</Button>
 
 </Col>
-<Col md="6" >
+<Col md="6"  data-aos="flip-down" >
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"3px"}}><h6>ISO 9001</h6></CardSubtitle>
@@ -81,11 +89,11 @@ function Quality() {
 <Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 9001 CERTIFICATION?</span></h1>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+      <img data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
   </Col>
 
-  <Col md="7" className='my-auto blurbox' >
+  <Col md="7" className='my-auto blurbox' data-aos="fade-down" >
     <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> Certification is a quality management standard intended to be applicable for any organization, regardless of type, size, or product & services it provides.</h3>
   </Col>
 </Row>
@@ -100,27 +108,27 @@ function Quality() {
 <Container fluid style={{backgroundImage: `url(${grad})`,backgroundPosition:'center',backgroundRepeat:'none',backgroundSize:'cover',borderTopLeftRadius:'30rem 25rem',borderBottomRightRadius:'40rem 25rem'}}>
   <Row className='mx-auto  justify-content-center' >
   <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i1} alt="..." />
+  <CardImg data-aos="zoom-in-up" top src={i1} alt="..." />
   <div className="card-label">ISO Certification</div>
-  <CardBody>
+  <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Resource Management Allocation of resources, assign responsibility, training & communication, both internal & external!</CardText>
   </CardBody>
 </Card>
 
 
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i2} alt="..." />
+  <CardImg data-aos="zoom-in-up" top src={i2} alt="..." />
   <div className="card-label">Growth</div>
-  <CardBody>
+  <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Risk Management & Vendor
 Management (supplier relationship)!</CardText>
   </CardBody>
 </Card>
 <Card className='blurbox m-5 ' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i3} alt="..." />
+  <CardImg data-aos="zoom-in-up" top src={i3} alt="..." />
   <div className="card-label">Support</div>
-  <CardBody>
-    <CardText style={{fontWeight:'400',color:'white'}}>Top Management Support
+  <CardBody >
+    <CardText data-aos="fade-up" style={{fontWeight:'400',color:'white'}}>Top Management Support
 Management Responsibility</CardText>
   </CardBody>
 </Card>
@@ -128,26 +136,26 @@ Management Responsibility</CardText>
 </Row>
 <Row className='mx-auto justify-content-center'>
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i4} alt="..." />
+  <CardImg data-aos="zoom-in-up"  top src={i4} alt="..." />
   <div className="card-label">Scope</div>
   <CardBody>
-    <CardText style={{fontWeight:'400',color:'white'}}>Product & Service, the scope of audit & exclusions!</CardText>
+    <CardText data-aos="fade-up" style={{fontWeight:'400',color:'white'}}>Product & Service, the scope of audit & exclusions!</CardText>
   </CardBody>
 </Card>
 
 
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i5} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i5} alt="..." />
   <div className="card-label">Validation</div>
   <CardBody>
-    <CardText style={{fontWeight:'400',color:'white'}} >Evaluation - Monitor, measure & validate!</CardText>
+    <CardText data-aos="fade-up" style={{fontWeight:'400',color:'white'}} >Evaluation - Monitor, measure & validate!</CardText>
   </CardBody>
 </Card>
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg top src={i6} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i6} alt="..." />
   <div className="card-label">Continual</div>
   <CardBody>
-    <CardText style={{fontWeight:'400',color:'white'}}>Sustainability!</CardText>
+    <CardText data-aos="fade-up" style={{fontWeight:'400',color:'white'}}>Sustainability!</CardText>
   </CardBody>
 </Card>
 

@@ -1,9 +1,10 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import ce from 'assets/img/services/ce.png'
 import { useHistory} from 'react-router-dom';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 import { Card, CardHeader,CardBody, CardTitle, CardSubtitle, CardText, CardLink } from 'reactstrap';
 
@@ -15,7 +16,10 @@ import {
 } from "reactstrap";
 function CeMarking() {
   const history = useHistory();
-
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   return (
     <div>
       <IndexNavbar/>
@@ -46,7 +50,7 @@ function CeMarking() {
 <Row className='mt-3 mt-md-5'>
 
 
-  <Col md="6" className='my-auto'>
+  <Col md="6" className='my-auto' data-aos="zoom-out-left">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits of CE Marking Certification</h1>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
@@ -64,7 +68,7 @@ function CeMarking() {
 </Col>
 
 
-<Col md="6" className='my-auto'>
+<Col md="6" className='my-auto' data-aos="flip-down">
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >CE MARKING</h6></CardSubtitle>
@@ -82,7 +86,7 @@ A manufacturer can also obtain CE Marking Certification by self-evaluation by su
 </Row>
 
 <Row  className='mt-5'>
-  <Col md="12">
+  <Col md="12" data-aos="fade-down">
 <Card>
 <CardHeader style={{backgroundColor:'#1A5F7A',color:'white'}}><h6>WHAT ARE THE REQUIREMENTS OF CE-MARKING CERTIFICATION ?</h6></CardHeader>
   <CardBody>

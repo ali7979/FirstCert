@@ -1,9 +1,10 @@
-  import React from 'react'
+import {React,useEffect} from 'react'
   import IndexNavbar from 'components/Navbars/IndexNavbar'
   import DemoFooter from 'components/Footers/DemoFooter'
   import hipaa from 'assets/img/services/hipaa.png'
   import { useHistory} from 'react-router-dom';
-
+  import Aos from 'aos';
+  import 'aos/dist/aos.css'
   import { Card, CardHeader,CardBody, CardTitle, CardSubtitle, CardText, CardLink } from 'reactstrap';
   
   import {
@@ -13,6 +14,10 @@
     Col
   } from "reactstrap";
   function Hippa() {
+    useEffect(()=>
+    {
+      Aos.init();
+    },[])
     const history = useHistory();
 
     return (
@@ -40,7 +45,7 @@
     </Row>
   <Row className='mt-md-5'>
 
-  <Col md="6" className='my-auto'>
+  <Col md="6" className='my-auto' data-aos="flip-down">
   <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
       <CardBody>
       <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >HIPAA</h6></CardSubtitle>
@@ -53,7 +58,7 @@
       </CardBody>
   </Card>
     </Col>
-    <Col md="6" className='my-auto'>
+    <Col md="6" className='my-auto' data-aos="zoom-out-left">
   <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h1>
   
   <ol style={{lineHeight: "1", margin: "0"}}>
@@ -84,8 +89,8 @@
   </Row>
 
 <Row  className='mt-5'>
-    <Col md="12">
-<Card>
+    <Col md="12" >
+<Card data-aos="flip-up">
     <CardHeader style={{backgroundColor:'#159895',color:'white'}}><h6>WHO NEEDS TO COMPLY WITH HIPAA CHECKLIST ?</h6></CardHeader>
     <CardBody>
         <CardTitle><h5 style={{fontWeight:'400'}}>Any organization or individual who works in or with the healthcare industry or who has access to Protected Health Information (PHI) of US individuals – broadly classified as Covered Entities, Business Associates & Sub-Contractors. This includes:</h5></CardTitle>
@@ -113,7 +118,7 @@ Integration with various international Standards - HACCP is a basic platform for
 
   <Row className="my-3 mx-auto" > 
   
-  <Col md="10 mx-auto" className='mt-5'>
+  <Col md="10 mx-auto" className='mt-5' data-aos="flip-down">
 <Card>
     <CardHeader style={{backgroundColor:'#1A5F7A',color:'white'}}><h6>WHAT ARE THE REQUIREMENTS OF HIPAA COMPLIANCE CERTIFICATION ?</h6></CardHeader>
     <CardBody>

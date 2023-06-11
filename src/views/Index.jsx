@@ -1,8 +1,8 @@
 
-import React from "react";
+import React, { useEffect } from 'react'
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import IndexHeader from "components/Headers/IndexHeader";
-
+import Aos from 'aos';
 function Index() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -11,6 +11,10 @@ function Index() {
       document.body.classList.remove("index");
     };
   });
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   return (
     <>
       <IndexNavbar />
