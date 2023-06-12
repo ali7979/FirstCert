@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import think from 'assets/img/services/think.png'
@@ -17,6 +19,10 @@ import {
   Col
 } from "reactstrap";
 function Iso27001() {
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   const history = useHistory();
 
   return (
@@ -45,7 +51,7 @@ function Iso27001() {
 <Row className='mt-3'>
 
 
-  <Col md="6" className='my-auto'>
+  <Col md="6" className='my-auto'  data-aos="zoom-out-up">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Organization</h1>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
@@ -101,7 +107,7 @@ function Iso27001() {
 </Col>
 
 
-<Col md="6" className='my-auto'>
+<Col md="6" className='my-auto' data-aos="flip-up">
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >27001</h6></CardSubtitle>
@@ -120,18 +126,18 @@ function Iso27001() {
 <Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'2px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 27001 CERTIFICATION?</span></h1>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+      <img data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
   </Col>
 
-  <Col md="7" className='my-auto blurbox' >
+  <Col md="7" className='my-auto blurbox' data-aos="fade-down">
     <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> The majority of sectors where information or data is an asset can use the standard. Software development, Cloud & IT support (product & service firms), financial industries, telecom industries, pharmaceutical, health organisations, and government bodies are among the businesses choosing ISO 27001:2022, according to a market survey.</h3>
   </Col>
 </Row>
 
 
 <Row  className='mt-5'>
-  <Col md="12">
+  <Col md="12" data-aos="flip-down">
 <Card>
 <CardHeader style={{backgroundColor:'#1A5F7A',color:'white'}}><h6>WHAT ARE THE REQUIREMENTS OF ISO 27001 CERTIFICATION ?</h6></CardHeader>
   <CardBody>

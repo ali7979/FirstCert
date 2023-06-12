@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import cs1 from 'assets/img/services/cs1.png'
@@ -16,6 +18,10 @@ import {
   Col
 } from "reactstrap";
 function Soc() {
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   const history = useHistory();
 
   return (
@@ -44,7 +50,7 @@ function Soc() {
 <Row className='mt-3'>
 
 
-  <Col md="6" className='my-auto'>
+  <Col md="6" className='my-auto' data-aos="zoom-out-down">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Types of SOC Compliance</h1>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
@@ -61,7 +67,7 @@ function Soc() {
 </Col>
 
 
-<Col md="6" className='my-auto'>
+<Col md="6" className='my-auto' data-aos="flip-down">
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >SOC</h6></CardSubtitle>
@@ -82,7 +88,7 @@ function Soc() {
 </Row>
 
 <Row  className='mt-5'>
-  <Col md="12">
+  <Col md="12" data-aos="flip-up">
 <Card>
 <CardHeader style={{backgroundColor:'#1A5F7A',color:'white'}}><h6>WHAT ARE THE REQUIREMENTS SOC COMPLIANCE?</h6></CardHeader>
   <CardBody>
@@ -119,11 +125,11 @@ function Soc() {
 <Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 9001 CERTIFICATION?</span></h1>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+      <img  data-aos="fade-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
   </Col>
 
-  <Col md="7" className='my-auto blurbox' >
+  <Col md="7" className='my-auto blurbox'  data-aos="zoom-out-up">
     <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px',fontSize:'1.3em'}}>SOC is widely applicable for service organizations like Payroll Processors, Medical Claims Processors, Data Analytic Providers, Loan Servicing Companies, Data center Companies, Third-Party Administrators (Retirement Plans, Medical Benefits, Pharmacy Benefits), Bank Trust Departments, Real Estate Title Companies, Advertising Companies, Insurance Companies, Loan Servicing, Hospice, Secure Printing, Software-as-a-Service (Saas) companies that may impact the financial s & security of their user entities.</h3></Col>
 </Row>
 

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import cs5 from 'assets/img/services/cs5.png'
@@ -16,6 +18,10 @@ import {
   Col
 } from "reactstrap";
 function Pci() {
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   const history = useHistory();
 
   return (
@@ -44,7 +50,7 @@ function Pci() {
 <Row className='mt-3'>
 
 
-  <Col md="6" className='my-auto'>
+  <Col md="6" className='my-auto' data-aos="zoom-out-down">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits Of PCI DSS Compliance</h1>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
@@ -60,7 +66,7 @@ function Pci() {
 </Col>
 
 
-<Col md="6" className='my-auto'>
+<Col md="6" className='my-auto' data-aos="flip-up">
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >PCI</h6></CardSubtitle>
@@ -76,7 +82,7 @@ function Pci() {
 </Row>
 
 <Row  className='mt-5'>
-  <Col md="12">
+  <Col md="12" data-aos="flip-down">
 <Card>
 <CardHeader style={{backgroundColor:'#1A5F7A',color:'white'}}><h6>WHAT ARE THE REQUIREMENTS OF PCI DSS COMPLIANCE ?</h6></CardHeader>
   <CardBody>
@@ -128,11 +134,11 @@ function Pci() {
 <Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Should Get <span style={{fontWeight:'500'}}>PCI DSS COMPLIANCE?</span></h1>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+      <img  data-aos="fade-up" src={think} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
   </Col>
 
-  <Col md="7" className='my-auto blurbox' >
+  <Col md="7" className='my-auto blurbox' data-aos="fade-down" >
     <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> PCI DSS compliance is a requirement to merchants and other organizations that store, process and/or transmit cardholder data. Every payment card brand has recommended certain requirements for compliance validation and reporting. To put in simple terms, PCI Compliance is required by companies using payments cards to make online transactions secure and protect them against identity theft.</h3>
   </Col>
 </Row>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import cs4 from 'assets/img/services/cs4.png'
@@ -15,7 +15,15 @@ import {
   Row,
   Col
 } from "reactstrap";
+
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 function Gdpr() {
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   const history = useHistory();
 
   return (
@@ -44,7 +52,7 @@ function Gdpr() {
 <Row className='mt-3'>
 
 
-  <Col md="6" className='my-auto'>
+  <Col md="6" className='my-auto' data-aos="zoom-out-up">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits Of GDPR Certification</h1>
 
 <ol style={{ lineHeight: "1", margin: "0" }}>
@@ -112,7 +120,7 @@ function Gdpr() {
 </Col>
 
 
-<Col md="6" className='my-auto'>
+<Col md="6" className='my-auto'data-aos="flip-up">
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >GDPR</h6></CardSubtitle>
@@ -129,16 +137,16 @@ function Gdpr() {
 <Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >WHO SHOULD BE  <span style={{fontWeight:'500'}}>GDPR COMPLIANT ?</span></h1>
   <Col md="5"className='mt-2'>
       {/* Add your image here */}
-      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+      <img  data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
   </Col>
 
-  <Col md="7" className='my-auto blurbox' >
+  <Col md="7" className='my-auto blurbox' data-aos="fade-down" >
     <h3 className='text-center ' style={{fontSize:'1.4em',fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> The regulation applies to the processing of Personal Data in the European Union. This regulation applies to the processing of personal data in the context of the activities carried out by an establishment; either in the capacity of a controller or a processor, or both, in the European Union, regardless of whether the processing takes place within EU-EEA or out of it. To simply: 1. Firms located in the EU-EEA 2. Firms not located in the EU-EEA, if they offer free or paid goods or services to EU residents or monitor the behavior of EU residents</h3>
   </Col>
 </Row>
 <Row  className='mt-5'>
-  <Col md="12">
+  <Col md="12" data-aos="flip-down">
 <Card>
 <CardHeader style={{backgroundColor:'#1A5F7A',color:'white'}}><h6>WHAT ARE THE REQUIREMENTS OF GDPR COMPLIANT CERTIFICATION ?</h6></CardHeader>
   <CardBody>

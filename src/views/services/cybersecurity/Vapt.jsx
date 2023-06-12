@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
 import DemoFooter from 'components/Footers/DemoFooter'
 import cs2 from 'assets/img/services/cs2.png'
@@ -16,6 +18,10 @@ import {
   Col
 } from "reactstrap";
 function Vapt() {
+  useEffect(()=>
+  {
+    Aos.init();
+  },[])
   const history = useHistory();
 
   return (
@@ -44,7 +50,7 @@ function Vapt() {
 <Row className='mt-3'>
 
 
-  <Col md="6" className='my-auto'>
+  <Col md="6" className='my-auto' data-aos="zoom-out-down">
 <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}> Benefits Of VAPT Certification</h1>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
@@ -66,7 +72,7 @@ function Vapt() {
 </Col>
 
 
-<Col md="6" className='my-auto'>
+<Col md="6" className='my-auto' data-aos="flip-up">
 <Card   className='mx-md-auto my-md-auto' style={{  background:"#1A5F7A",width: '30em',height:'auto'}}>
     <CardBody>
     <CardSubtitle className="mt-2 text-white" style={{letterSpacing:"5px"}}><h6 >VAPT</h6></CardSubtitle>
@@ -93,7 +99,7 @@ function Vapt() {
 </Row>
 
 <Row  className='mt-5'>
-  <Col md="12">
+  <Col md="12" data-aos="flip-down">
 <Card>
 <CardHeader style={{backgroundColor:'#1A5F7A',color:'white'}}><h6>WHAT IS THE METHODOLOGY FOR VAPT CERTIFICATION ?</h6></CardHeader>
   <CardBody>
@@ -167,11 +173,11 @@ function Vapt() {
 <Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>VAPT CERTIFICATION?</span></h1>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  src={think} alt="Your Image" style={{ maxWidth: "100%",
+      <img  data-aos="fade-up" src={think} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
   </Col>
 
-  <Col md="7" className='my-auto blurbox' >
+  <Col md="7" className='my-auto blurbox' data-aos="flip-down" >
     <h3 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px',fontSize:'1.5em'}}>VAPT is a test conducted to discover threats in IT infrastructure of organizations by security experts. It is not only restricted to companies which work on software development; it is also applicable to companies working on customer data & dealing with the confidential data on systems where networks, applications, software, etc. are used.</h3></Col>
 </Row>
 
