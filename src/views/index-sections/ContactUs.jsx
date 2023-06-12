@@ -47,9 +47,7 @@ function ContactUs() {
     <IndexNavbar/>
     <div className="main mt-4">
       <div className="section landing-section">
-      <Alert style={{backgroundColor:"#51CBCE",borderRadius:'50px',marginTop:'7rem'}} className='my-md-5 text-center' isOpen={visible} toggle={onDismiss}>
-            <b>Success !!</b>   Your Message has been successfully sent !
-          </Alert>
+    
       <Container style={{marginTop:"4em"}}>
   <Row className='my-auto'>
     <Col md="6" className='my-auto'data-aos="flip-down">
@@ -61,6 +59,9 @@ function ContactUs() {
       <h1 className="text-center" style={{fontFamily:"'Raleway',sans-serif",fontWeight:'400',letterSpacing:'2px'}}>Keep in touch?</h1>
       <Form className="contact-form" onSubmit={sendEmail}>
         <Row>
+        <Alert style={{backgroundColor:"#51CBCE",borderRadius:'50px',width:'100%'}} className='my-md-5 text-center' isOpen={visible} toggle={onDismiss}>
+            <b>Success!</b>   Your Message has been successfully sent !
+          </Alert>
           <Col md="6">
             <label >Name</label>
             <InputGroup>
