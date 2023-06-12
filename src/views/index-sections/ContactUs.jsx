@@ -28,14 +28,14 @@ function ContactUs() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_zf3xyis', 'template_hwntiz6',e.target,'E2VMubV6-B8-kP5XA',)
+        emailjs.sendForm('service_8xxvx1n', 'template_r18dlen',e.target,'C2MELbGdO70klMVdY',)
           .then((result) => {
-            console.log('Email sent successfully');
+           // console.log('Email sent successfully');
             setVisible(true); 
            e.target.reset()
 
           }, (error) => {
-            console.log('Error sending email:', error);
+            alert('Error sending email');
           });
       };
       useEffect(()=>
