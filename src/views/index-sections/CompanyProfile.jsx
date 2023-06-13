@@ -24,7 +24,7 @@ function CompanyProfile() {
             <Col md="6" >
            
             <div  className='cp'  style={{maxWidth: "100%", height: "auto"}}>
-                <img src={cp} alt="cp" style={{maxWidth: "100%", height: "auto"}}/>
+                <img src={cp} alt="cp" loading="lazy"  style={{maxWidth: "100%", height: "auto"}}/>
       </div>
             </Col>
             <Col md="6" className='text-left' data-aos="fade-up">
@@ -47,7 +47,7 @@ and straightforward documentation.
                 <Modal isOpen={liveDemo} toggle={() => setLiveDemo(false)}>
         <div className="modal-header">
           <h2 className="modal-title" id="exampleModalLiveLabel"style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900",color:"#51cbce"}}>
-          <img src={logo} style={{height:"100px",width:"100px"}}/>
+          <img src={logo} loading="lazy"  style={{height:"100px",width:"100px"}}/>
   First Cert
           </h2>
          

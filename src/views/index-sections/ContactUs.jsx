@@ -52,7 +52,7 @@ function ContactUs() {
   <Row className='my-auto'>
     <Col md="6" className='my-auto'data-aos="flip-down">
       {/* Add your image here */}
-      <img  src={contactus} alt="Your Image" style={{ maxWidth: "100%",
+      <img  loading="lazy"  src={contactus} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/>
     </Col>
     <Col md="6" data-aos="flip-left">

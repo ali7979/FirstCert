@@ -38,7 +38,7 @@ function DemoFooter() {
       <section className="">
         <div className="row">
           <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <Link to="/index">  <img src={logo} alt="logo" style={{height:"150px",width:"250px"}} /></Link>
+          <Link to="/index">  <img loading="lazy"  src={logo} alt="logo" style={{height:"150px",width:"250px"}} /></Link>
           </div>
 
           <hr className="w-100 clearfix d-md-none" />

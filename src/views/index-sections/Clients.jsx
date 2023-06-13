@@ -23,47 +23,47 @@ function Clients() {
 			<img src={c1} height="100" width="120" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://briskintegrated.com/wp-content/uploads/2020/03/brisk-logo-two.png" height="100" width="250" alt="" />
+			<img loading="lazy" src="https://briskintegrated.com/wp-content/uploads/2020/03/brisk-logo-two.png" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://lh3.googleusercontent.com/p/AF1QipPs6OZVOglrTw4_rJdTWdJcUKS7zaFpq7PwSWE=s1360-w1360-h1020" height="100" width="200" alt="" />
+			<img loading="lazy"  src="https://lh3.googleusercontent.com/p/AF1QipPs6OZVOglrTw4_rJdTWdJcUKS7zaFpq7PwSWE=s1360-w1360-h1020" height="100" width="200" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="200" alt="" />
+			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="200" alt="" />
 		</div>
 		<div className="slide">
-			<img src={c2} height="100" width="220" alt="" />
+			<img loading="lazy"  src={c2} height="100" width="220" alt="" />
 		</div>
 		
 		<div className="slide">
-        <img src={c3} height="100" width="200" alt="" />
+        <img loading="lazy"  src={c3} height="100" width="200" alt="" />
 		</div>
 
         <div className="slide">
-        <img src="https://www.primedtalent.com/Assets/Images/logo.png" height="80" width="200" alt="" />
+        <img loading="lazy"  src="https://www.primedtalent.com/Assets/Images/logo.png" height="80" width="200" alt="" />
 		</div>
 
 		<div className="slide">
-			<img src={c1} height="100" width="120" alt="" />
+			<img loading="lazy"  src={c1} height="100" width="120" alt="" />
 		</div>
 		<div className="slide">
-        <img src="https://briskintegrated.com/wp-content/uploads/2020/03/brisk-logo-two.png" height="100" width="250" alt="" />
+        <img loading="lazy"  src="https://briskintegrated.com/wp-content/uploads/2020/03/brisk-logo-two.png" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://lh3.googleusercontent.com/p/AF1QipPs6OZVOglrTw4_rJdTWdJcUKS7zaFpq7PwSWE=s1360-w1360-h1020" height="100" width="150" alt="" />
+			<img loading="lazy"  src="https://lh3.googleusercontent.com/p/AF1QipPs6OZVOglrTw4_rJdTWdJcUKS7zaFpq7PwSWE=s1360-w1360-h1020" height="100" width="150" alt="" />
 		</div>
 		
         <div className="slide">
-			<img src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="250" alt="" />
+			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src={c2} height="100" width="220" alt="" />
+			<img loading="lazy"  src={c2} height="100" width="220" alt="" />
 		</div>
 		<div className="slide">
-			<img src={c3} height="100" width="250" alt="" />
+			<img loading="lazy"  src={c3} height="100" width="250" alt="" />
 		</div>
 		<div className="slide">
-			<img src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="250" alt="" />
+			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="250" alt="" />
 		</div>
 	</div>
 </div>

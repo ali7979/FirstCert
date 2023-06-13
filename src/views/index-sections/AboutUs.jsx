@@ -29,7 +29,7 @@ function AboutUs() {
   <Row className='mt-4'>
     <Col md="6" data-aos="zoom-in-down" >
       {
-      <img  src={aboutus} alt="Your Image" style={{ maxWidth: "100%",
+      <img  loading="lazy"  src={aboutus} alt="Your Image" style={{ maxWidth: "100%",
   height: "auto"}}/> }
     </Col>
     <Col md="6" data-aos="zoom-out-down">

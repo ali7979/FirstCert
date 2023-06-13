@@ -50,7 +50,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg top src={i1} alt="..." />
+            <CardImg top loading="lazy"  src={i1} alt="..." />
             <div className="card-label">Quality</div>
             <CardBody  data-aos="zoom-in">
             
@@ -93,7 +93,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg top src={i6} alt="..." />
+            <CardImg loading="lazy"  top src={i6} alt="..." />
             <div className="card-label">Environment</div>
             <CardBody  data-aos="zoom-in">
             
@@ -122,7 +122,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg top src={i3} alt="..." />
+            <CardImg loading="lazy"  top src={i3} alt="..." />
             <div className="card-label">Health & Safety</div>
             <CardBody  data-aos="zoom-in">
               
@@ -166,7 +166,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg top src={i4} alt="..." />
+            <CardImg loading="lazy"  top src={i4} alt="..." />
             <div className="card-label">Food Safety</div>
             <CardBody data-aos="zoom-in">
             
@@ -222,7 +222,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg top src={i7} alt="..." />
+            <CardImg loading="lazy"  top src={i7} alt="..." />
             <div className="card-label">Cyber Security</div>
             <CardBody data-aos="zoom-in">
               
@@ -292,7 +292,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg top src={i5} alt="..." />
+            <CardImg loading="lazy"  top src={i5} alt="..." />
             <div className="card-label">Product Certification</div>
             <CardBody data-aos="zoom-in">
               

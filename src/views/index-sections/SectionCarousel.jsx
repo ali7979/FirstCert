@@ -100,7 +100,7 @@ function SectionCarousel() {
                         onExited={onExited}
                         key={item.src}
                       >
-                        <img src={item.src} alt={item.altText} />
+                        <img src={item.src} alt={item.altText} loading="lazy"  />
                         <CarouselCaption
                           captionText={item.caption}
                           captionHeader=""
