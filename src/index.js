@@ -35,107 +35,29 @@ const App = () => {
 
   return (
     <BrowserRouter>
-         <ScrollToTop/>
+      <ScrollToTop />
       <ThemeContext.Provider value={{ theme, setTheme }}>
-      
         <Switch>
-     
-          <Route path="/index"  primary={false} render={(props) => <Index {...props} />} />
-          <Route
-            path="/aboutus"
-            primary={false}
-            render={(props) => <AboutUs/>}
-          />
-          <Route
-            path="/contact"
-            primary={false}
-            render={(props) =>  <ContactUs/>}
-          />
-         
-
-<Route
-            path="/quality"
-            primary={false}
-            render={(props) =>  <Quality/>}
-          />
-          <Route
-            path="/cmmi"
-            primary={false}
-            render={(props) =>  <Cmmi/>}
-          />
-          <Route
-            path="/iso45001"
-            primary={false}
-            render={(props) =>  <Iso45001/>}
-          />
-
-<Route
-            path="/hipaa"
-            primary={false}
-            render={(props) =>  <Hippa/>}
-          />
-
-
-<Route
-            path="/environment"
-            primary={false}
-            render={(props) =>  <Environment/>}
-          />
-
-<Route
-            path="/halal"
-            primary={false}
-            render={(props) =>  <Halal/>}
-          />
-            <Route
-            path="/haccp"
-            primary={false}
-            render={(props) =>  <Haccp/>}
-          />
-            <Route
-            path="/iso22000"
-            primary={false}
-            render={(props) =>  <Iso22000/>}
-          />
-           <Route
-            path="/iso27001"
-            primary={false}
-            render={(props) =>  <Iso27001/>}
-          />
-           <Route
-            path="/gdpr"
-            primary={false}
-            render={(props) =>  <Gdpr/>}
-          />
-           <Route
-            path="/pci"
-            primary={false}
-            render={(props) =>  <Pci/>}
-          />
-           <Route
-            path="/soc"
-            primary={false}
-            render={(props) =>  <Soc/>}
-          />
-           <Route
-            path="/vapt"
-            primary={false}
-            render={(props) =>  <Vapt/>}
-          />
-           <Route
-            path="/cemarking"
-            primary={false}
-            render={(props) =>  <CeMarking/>}
-          />
-           <Route
-            path="/services"
-            primary={false}
-            render={(props) =>  <ServicesPage/>}
-          />
-
-          <Redirect to="/index" />
+          <Route exact path="/" render={(props) => <Index {...props} />} />
+          <Route path="/aboutus" render={(props) => <AboutUs />} />
+          <Route path="/contact" render={(props) => <ContactUs />} />
+          <Route path="/quality" render={(props) => <Quality />} />
+          <Route path="/cmmi" render={(props) => <Cmmi />} />
+          <Route path="/iso45001" render={(props) => <Iso45001 />} />
+          <Route path="/hipaa" render={(props) => <Hippa />} />
+          <Route path="/environment" render={(props) => <Environment />} />
+          <Route path="/halal" render={(props) => <Halal />} />
+          <Route path="/haccp" render={(props) => <Haccp />} />
+          <Route path="/iso22000" render={(props) => <Iso22000 />} />
+          <Route path="/iso27001" render={(props) => <Iso27001 />} />
+          <Route path="/gdpr" render={(props) => <Gdpr />} />
+          <Route path="/pci" render={(props) => <Pci />} />
+          <Route path="/soc" render={(props) => <Soc />} />
+          <Route path="/vapt" render={(props) => <Vapt />} />
+          <Route path="/cemarking" render={(props) => <CeMarking />} />
+          <Route path="/services" render={(props) => <ServicesPage />} />
+          <Redirect to="/" />
         </Switch>
-        
       </ThemeContext.Provider>
     </BrowserRouter>
   );
