@@ -33,7 +33,7 @@ const items = [
     caption: "You can use Cursor to scroll"
   },
   {
-    src: require("assets/img/it.png"),
+    src: require("assets/img/it.jpg"),
     altText: "Somewhere else",
     caption: "You can use Cursor to scroll"  },
 
