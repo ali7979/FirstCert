@@ -28,7 +28,7 @@ function CompanyProfile() {
       </div>
             </Col>
             <Col md="6" className='text-left' data-aos="fade-up">
-                <h1 style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900",color:"#51cbce",letterSpacing:"2px"}}>COMPANY PROFILE</h1>
+                <h2 style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900",color:"#51cbce",letterSpacing:"2px"}}>COMPANY PROFILE</h2>
               
                 <h4 className='text-middle ' style={{letterSpacing:"0.8px",fontWeight:"400"}}>
                 First Cert is a consulting organization that offers Business Advisory, Training, 

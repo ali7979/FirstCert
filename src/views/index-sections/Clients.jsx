@@ -13,7 +13,7 @@ function Clients() {
 <div className="section  clientsection" style={{ backgroundImage: `url(${require('assets/img/clients.jpg')})`,backgroundRepeat: "no-repeat",backgroundSize:"cover",backgroundPosition:"center",borderRadius:"40px" }}>
             <Container>
                 <Row>
-                <Col className="text-center  mb-md-5">                    <h1>Our Clients</h1>
+                <Col className="text-center  mb-md-5">                    <h2>Our Clients</h2>
                     </Col>
                     <Col className="mt-5 mt-md-0">
                     

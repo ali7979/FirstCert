@@ -18,7 +18,7 @@ function Services() {
   return (
     <div>
 
-      <h1
+      <h2
         style={{
           fontStyle: "'Raleway', sans-serif",
           fontWeight: "400",
@@ -27,7 +27,7 @@ function Services() {
         className="text-center my-2"
       >
         Our Services
-      </h1>
+      </h2>
 
       <Container
         className="mb-4"

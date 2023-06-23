@@ -79,7 +79,7 @@ function SectionCarousel() {
       <Col>
         <Row className="align-items-center">
           <Col xs="12" md="3" className="mb-2" >
-            <h1 style={{fontFamily: "'Raleway', sans-serif",fontWeight:"400"}}>Our Expertise</h1>
+            <h2 style={{fontFamily: "'Raleway', sans-serif",fontWeight:"400"}}>Our Expertise</h2>
           </Col>
           <Col xs="12" md="9" data-aos="flip-right">
             
