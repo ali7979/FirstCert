@@ -35,9 +35,13 @@ function Halal() {
                 {/* Add your image here */}
                 <img
                   src={halal}
-                  alt="Your Image"
-                  style={{ maxWidth: "90%", maxHeight: "90%", height: "auto" }}
-                />
+                  alt="halal certification"
+                  style={{ maxWidth: "90%", maxHeight: "90%", height: "auto",  transition: "transform 0.3s ease-in-out",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+              />
+              
               </Col>
               <Col md="6" className="my-auto">
                 <h1
@@ -59,7 +63,7 @@ function Halal() {
             </Row>
             <Row className="mt-md-5">
               <Col md="6" className="my-auto" data-aos="zoom-out-left">
-                <h1
+                <h2
                   style={{
                     fontWeight: "bold",
                     fontFamily: "'Raleway', sans-serif",
@@ -67,7 +71,7 @@ function Halal() {
                   }}
                 >
                   Benefits to your Customers
-                </h1>
+                </h2>
 
                 <ol style={{ lineHeight: "1", margin: "0" }}>
                   <li
@@ -172,17 +176,20 @@ function Halal() {
             </Row>
             <Row className="mt-3 mx-auto">
               {" "}
-              <h1 style={{ letterSpacing: "2px", wordSpacing: "3px" }}>
+              <h2 style={{ letterSpacing: "2px", wordSpacing: "3px" }}>
                 Who Can Get{" "}
                 <span style={{ fontWeight: "500" }}>HALAL CERTIFICATION?</span>
-              </h1>
+              </h2>
               <Col md="5" className="mt-5">
                 {/* Add your image here */}
                 <img data-aos="zoom-out-down"
                   src={think}
-                  alt="Your Image"
-                  style={{ maxWidth: "100%", height: "auto" }}
-                />
+                  alt="certification"
+                  style={{ maxWidth: "100%", height: "auto" ,  transition: "transform 0.3s ease-in-out",
+                }}
+                onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+                onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+              />
               </Col>
               <Col md="7" data-aos="fade-down" className="my-auto blurbox">
                 <h3

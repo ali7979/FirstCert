@@ -35,8 +35,12 @@ function Vapt() {
  
     <Col md="6" >
       {/* Add your image here */}
-      <img  src={cs2} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  src={cs2} alt="vapt certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
     <Col md="6" className='my-auto'>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >VAPT  Certifications</h1>
@@ -51,7 +55,7 @@ function Vapt() {
 
 
   <Col md="6" className='my-auto' data-aos="zoom-out-down">
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}> Benefits Of VAPT Certification</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}> Benefits Of VAPT Certification</h2>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
   <li className="mt-2" style={{fontWeight:"bold", margin: "0"}}><h6 style={{fontWeight:'700'}}>Gives an organization a detailed view of the threats facing its applications, enabling the business to better protect its systems and data from malicious attacks.</h6></li>
@@ -170,11 +174,15 @@ function Vapt() {
 </Col>
 </Row>
 
-<Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>VAPT CERTIFICATION?</span></h1>
+<Row className="mt-3 mx-auto" >  <h2 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>VAPT CERTIFICATION?</span></h2>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  data-aos="fade-up" src={think} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  data-aos="fade-up" src={think} alt="certified" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
   </Col>
 
   <Col md="7" className='my-auto blurbox' data-aos="flip-down" >

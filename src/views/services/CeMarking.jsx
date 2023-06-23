@@ -29,11 +29,12 @@ function CeMarking() {
   <Row >
   <Col md="6" >
       {/* Add your image here */}
-      <img  src={ce} alt="Your Image" style={{ maxWidth: "90%",
-  height: "auto",
-  
-  
-  }}/>
+      <img  src={ce} alt="cemark certification" style={{ maxWidth: "90%",
+  height: "auto" ,transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
  
    
@@ -51,7 +52,7 @@ function CeMarking() {
 
 
   <Col md="6" className='my-auto' data-aos="zoom-out-left">
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits of CE Marking Certification</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits of CE Marking Certification</h2>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
   <li className="mt-2" style={{fontWeight:"bold", margin: "0"}}><h5 style={{fontWeight:'400', margin: "0"}}>Implementation of internationally recognized standard.</h5></li>

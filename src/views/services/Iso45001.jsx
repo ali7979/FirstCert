@@ -34,8 +34,12 @@ function Iso45001() {
     
     <Col md="6" >
       {/* Add your image here */}
-      <img  src={iso} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  src={iso} alt="ISO 45001 CERTIFICATION" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
     <Col md="6" className='my-auto'>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >ISO 45001 Certifications</h1>
@@ -48,7 +52,7 @@ function Iso45001() {
 <Row className='mt-md-5'>
 
 <Col md="6" data-aos="zoom-out-left" >
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h2>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
   <li className="mt-2" style={{fontWeight:"bold", margin: "0"}}><h5 style={{fontWeight:'400', margin: "0"}}>Improves the corporate image of the organization and provides exposure to elite management working modules.</h5></li>
@@ -80,11 +84,15 @@ function Iso45001() {
 </Card>
   </Col>
 </Row>
-<Row className="my-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'1px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 45001 CERTIFICATION?</span></h1>
+<Row className="my-3 mx-auto" >  <h2 style={{letterSpacing:'2px',wordSpacing:'1px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 45001 CERTIFICATION?</span></h2>
 <Col md="5">
       {/* Add your image here */}
-      <img data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img data-aos="zoom-out-down" src={think} alt="certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
   </Col>
 <Col md="7" className='mt-5'  data-aos="fade-down" >
     <h5 className='text-center' style={{fontFamily:"'Raleway', sans-serif",fontWeight:"400",letterSpacing:'2px',wordSpacing:'4px'}}> The guidelines that specify what an Occupational Health and Safety Management System must do. The requirement is based on the combination of the OHSAS 18001 and ISO 9001 standards. Any organisation, regardless of size, location, or industry can become certified to ISO 45001. To improve Occupational Health and Safety requirements, many industries in manufacturing, services, mining, and food processing choose ISO 45001 Certification. This certification system would be necessary for any industry looking to increase labour participation and knowledge. Obtaining ISO 45001 Certification is indicated for firms that like to train their staff members in operational risk identification and mitigation.</h5>

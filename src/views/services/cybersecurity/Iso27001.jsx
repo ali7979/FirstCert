@@ -36,8 +36,12 @@ function Iso27001() {
  
     <Col md="6" >
      
-      <img  src={cs3} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  src={cs3} alt="iso27001 certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
     <Col md="6" className='my-auto'>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >ISO 27001  Certifications</h1>
@@ -52,7 +56,7 @@ function Iso27001() {
 
 
   <Col md="6" className='my-auto'  data-aos="zoom-out-up">
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Organization</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Organization</h2>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
   <li className="mt-2" style={{fontWeight: "bold", margin: "0"}}>
@@ -123,11 +127,14 @@ function Iso27001() {
 </Row>
 
 
-<Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'2px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 27001 CERTIFICATION?</span></h1>
+<Row className="mt-3 mx-auto" >  <h2 style={{letterSpacing:'2px',wordSpacing:'2px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 27001 CERTIFICATION?</span></h2>
   <Col md="5"className='mt-5'>
-      {/* Add your image here */}
-      <img data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img data-aos="zoom-out-down" src={think} alt="certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
   </Col>
 
   <Col md="7" className='my-auto blurbox' data-aos="fade-down">

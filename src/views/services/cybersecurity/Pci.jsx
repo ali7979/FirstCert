@@ -35,8 +35,12 @@ function Pci() {
  
     <Col md="6" >
       {/* Add your image here */}
-      <img  src={cs5} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  src={cs5} alt="pci certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
     <Col md="6" className='my-auto'>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >PCI  Certifications</h1>
@@ -51,7 +55,7 @@ function Pci() {
 
 
   <Col md="6" className='my-auto' data-aos="zoom-out-down">
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits Of PCI DSS Compliance</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits Of PCI DSS Compliance</h2>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
   <li className="mt-2" style={{fontWeight:"bold", margin: "0"}}><h5 style={{fontWeight:'400', margin: "0"}}>Security improvement – Reduces the risk of data breaches.</h5></li>
@@ -131,11 +135,15 @@ function Pci() {
 </Card>
 </Col>
 </Row>
-<Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Should Get <span style={{fontWeight:'500'}}>PCI DSS COMPLIANCE?</span></h1>
+<Row className="mt-3 mx-auto" >  <h2 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Should Get <span style={{fontWeight:'500'}}>PCI DSS COMPLIANCE?</span></h2>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img  data-aos="fade-up" src={think} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  data-aos="fade-up" src={think} alt="certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
   </Col>
 
   <Col md="7" className='my-auto blurbox' data-aos="fade-down" >

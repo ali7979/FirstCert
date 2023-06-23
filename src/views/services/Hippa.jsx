@@ -31,8 +31,12 @@ import {React,useEffect} from 'react'
    
       <Col md="6" >
         {/* Add your image here */}
-        <img  src={hipaa} alt="Your Image" style={{ maxWidth: "100%",
-    height: "auto"}}/>
+        <img  src={hipaa} alt="hipaa certification" style={{ maxWidth: "100%",
+    height: "auto",  transition: "transform 0.3s ease-in-out",
+  }}
+  onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+  onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
       </Col>
       <Col md="6" className='my-auto'>
         <h1 className="text-left " style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >HIPAA Compliance Certifications</h1>
@@ -59,7 +63,7 @@ import {React,useEffect} from 'react'
   </Card>
     </Col>
     <Col md="6" className='my-auto' data-aos="zoom-out-left">
-  <h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h1>
+  <h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h2>
   
   <ol style={{lineHeight: "1", margin: "0"}}>
     <li className="mt-2" style={{fontWeight:"bold", margin: "0"}}><h5 style={{fontWeight:'400', margin: "0"}}>Requires the organization to have a data backup plan in place & share a copy on request.</h5></li>

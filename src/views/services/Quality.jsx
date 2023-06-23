@@ -42,8 +42,17 @@ function Quality() {
   <Row >
     <Col md="6" className='mt-5' >
       {/* Add your image here */}
-      <img  src={S19001} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img
+    src={S19001}
+    alt="iso9001 certification"
+    style={{
+      maxWidth: "100%",
+      height: "auto",
+      transition: "transform 0.3s ease-in-out",
+    }}
+    onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+    onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+  />
     </Col>
     <Col md="6" className='my-auto animated fadeIn '>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >ISO 9001 Certifications</h1>
@@ -55,7 +64,7 @@ function Quality() {
   </Row>
 <Row className='mt-md-5'>
 <Col md="6" className='my-auto ' data-aos="zoom-out-left">
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Customers</h2>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
   <li className="mt-2" style={{fontWeight:"bold", margin: "0"}}><h5 style={{fontWeight:'400', margin: "0"}}>Improved quality and service</h5></li>
@@ -86,11 +95,15 @@ function Quality() {
   </Col>
 
 </Row>
-<Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 9001 CERTIFICATION?</span></h1>
+<Row className="mt-3 mx-auto" >  <h2 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>ISO 9001 CERTIFICATION?</span></h2>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img data-aos="zoom-out-down" src={think} alt="certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
   </Col>
 
   <Col md="7" className='my-auto blurbox' data-aos="fade-down" >
@@ -103,12 +116,12 @@ function Quality() {
 
         </div>
     </div>
-    <Col md="12" className='mb-3 text-center' ><h1 style={{letterSpacing:'2px',wordSpacing:'3px'}}>Requirements for <span style={{color:"#57C5B6",fontWeight:'400'}}>ISO 9001</span></h1></Col> 
+    <Col md="12" className='mb-3 text-center' ><h2 style={{letterSpacing:'2px',wordSpacing:'3px'}}>Requirements for <span style={{color:"#57C5B6",fontWeight:'400'}}>ISO 9001</span></h2></Col> 
 
 <Container fluid style={{backgroundImage: `url(${grad})`,backgroundPosition:'center',backgroundRepeat:'none',backgroundSize:'cover',borderTopLeftRadius:'30rem 25rem',borderBottomRightRadius:'40rem 25rem'}}>
   <Row className='mx-auto  justify-content-center' >
   <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg data-aos="zoom-in-up" top src={i1} alt="..." />
+  <CardImg data-aos="zoom-in-up" top src={i1} alt="certification" />
   <div className="card-label">ISO Certification</div>
   <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Resource Management Allocation of resources, assign responsibility, training & communication, both internal & external!</CardText>
@@ -117,7 +130,7 @@ function Quality() {
 
 
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg data-aos="zoom-in-up" top src={i2} alt="..." />
+  <CardImg data-aos="zoom-in-up" top src={i2} alt="certification" />
   <div className="card-label">Growth</div>
   <CardBody data-aos="fade-up">
     <CardText style={{fontWeight:'400',color:'white'}}>Risk Management & Vendor
@@ -125,7 +138,7 @@ Management (supplier relationship)!</CardText>
   </CardBody>
 </Card>
 <Card className='blurbox m-5 ' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg data-aos="zoom-in-up" top src={i3} alt="..." />
+  <CardImg data-aos="zoom-in-up" top src={i3} alt="certification" />
   <div className="card-label">Support</div>
   <CardBody >
     <CardText data-aos="fade-up" style={{fontWeight:'400',color:'white'}}>Top Management Support
@@ -136,7 +149,7 @@ Management Responsibility</CardText>
 </Row>
 <Row className='mx-auto justify-content-center'>
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg data-aos="zoom-in-up"  top src={i4} alt="..." />
+  <CardImg data-aos="zoom-in-up"  top src={i4} alt="certification" />
   <div className="card-label">Scope</div>
   <CardBody>
     <CardText data-aos="fade-up" style={{fontWeight:'400',color:'white'}}>Product & Service, the scope of audit & exclusions!</CardText>
@@ -145,14 +158,14 @@ Management Responsibility</CardText>
 
 
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg  data-aos="zoom-in-up" top src={i5} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i5} alt="certification" />
   <div className="card-label">Validation</div>
   <CardBody>
     <CardText data-aos="fade-up" style={{fontWeight:'400',color:'white'}} >Evaluation - Monitor, measure & validate!</CardText>
   </CardBody>
 </Card>
 <Card className='blurbox m-5' style={{ width: '20rem', backgroundColor: 'rgba(255, 255, 255, 0)' }}>
-  <CardImg  data-aos="zoom-in-up" top src={i6} alt="..." />
+  <CardImg  data-aos="zoom-in-up" top src={i6} alt="certification" />
   <div className="card-label">Continual</div>
   <CardBody>
     <CardText data-aos="fade-up" style={{fontWeight:'400',color:'white'}}>Sustainability!</CardText>

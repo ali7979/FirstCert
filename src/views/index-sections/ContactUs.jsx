@@ -52,8 +52,12 @@ function ContactUs() {
   <Row className='my-auto'>
     <Col md="6" className='my-auto'data-aos="flip-down">
       {/* Add your image here */}
-      <img  loading="lazy"  src={contactus} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  loading="lazy"  src={contactus} alt="FirstCert contactus" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
     <Col md="6" data-aos="flip-left">
       <h1 className="text-center" style={{fontFamily:"'Raleway',sans-serif",fontWeight:'400',letterSpacing:'2px'}}>Keep in touch?</h1>

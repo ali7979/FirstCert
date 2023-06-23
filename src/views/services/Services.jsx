@@ -17,7 +17,6 @@ function Services() {
  
   return (
     <div>
-      {/* <h1 style={{fontStyle:"'Raleway', sans-serif",fontWeight:'400'}} className='text-center my-2'>Our Services</h1> */}
 
       <h1
         style={{
@@ -50,7 +49,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg top loading="lazy"  src={i1} alt="..." />
+            <CardImg top loading="lazy"  src={i1} alt="Quality Certification" />
             <div className="card-label">Quality</div>
             <CardBody  data-aos="zoom-in">
             
@@ -93,7 +92,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg loading="lazy"  top src={i6} alt="..." />
+            <CardImg loading="lazy"  top src={i6} alt="Environment Certification" />
             <div className="card-label">Environment</div>
             <CardBody  data-aos="zoom-in">
             
@@ -122,7 +121,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg loading="lazy"  top src={i3} alt="..." />
+            <CardImg loading="lazy"  top src={i3} alt="Health & Safety Certification" />
             <div className="card-label">Health & Safety</div>
             <CardBody  data-aos="zoom-in">
               
@@ -166,7 +165,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg loading="lazy"  top src={i4} alt="..." />
+            <CardImg loading="lazy"  top src={i4} alt="Food Safety Certification" />
             <div className="card-label">Food Safety</div>
             <CardBody data-aos="zoom-in">
             
@@ -222,7 +221,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg loading="lazy"  top src={i7} alt="..." />
+            <CardImg loading="lazy"  top src={i7} alt="Cyber Security Certification" />
             <div className="card-label">Cyber Security</div>
             <CardBody data-aos="zoom-in">
               
@@ -292,7 +291,7 @@ function Services() {
               backgroundColor: "rgba(255, 255, 255, 0)",
             }}
           >
-            <CardImg loading="lazy"  top src={i5} alt="..." />
+            <CardImg loading="lazy"  top src={i5} alt="Product Certification" />
             <div className="card-label">Product Certification</div>
             <CardBody data-aos="zoom-in">
               

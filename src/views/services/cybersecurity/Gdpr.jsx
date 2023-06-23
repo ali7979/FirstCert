@@ -37,8 +37,12 @@ function Gdpr() {
  
     <Col md="6" >
       {/* Add your image here */}
-      <img  src={cs4} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  src={cs4} alt="gdpr certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
     <Col md="6" className='my-auto'>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >GDPR  Certifications</h1>
@@ -53,7 +57,7 @@ function Gdpr() {
 
 
   <Col md="6" className='my-auto' data-aos="zoom-out-up">
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits Of GDPR Certification</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits Of GDPR Certification</h2>
 
 <ol style={{ lineHeight: "1", margin: "0" }}>
  
@@ -134,11 +138,15 @@ function Gdpr() {
 </Card>
   </Col>
 </Row>
-<Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >WHO SHOULD BE  <span style={{fontWeight:'500'}}>GDPR COMPLIANT ?</span></h1>
+<Row className="mt-3 mx-auto" >  <h2 style={{letterSpacing:'2px',wordSpacing:'3px'}} >WHO SHOULD BE  <span style={{fontWeight:'500'}}>GDPR COMPLIANT ?</span></h2>
   <Col md="5"className='mt-2'>
       {/* Add your image here */}
-      <img  data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  data-aos="zoom-out-down" src={think} alt="certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
   </Col>
 
   <Col md="7" className='my-auto blurbox' data-aos="fade-down" >

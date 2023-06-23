@@ -38,17 +38,17 @@ function IndexHeader() {
             <div className="title-brand">
               <h1 className="presentation-title">Elevate Your Certification</h1>
               <div className="fog-low">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
+                <img alt="certified" src={require("assets/img/fog-low.png")} />
               </div>
               <div className="fog-low right">
-                <img alt="..." src={require("assets/img/fog-low.png")} />
+                <img alt="certification" src={require("assets/img/fog-low.png")} />
               </div>
             </div>
            
-            <h1 className="presentation-subtitle text-center">
+            <h2 className="presentation-subtitle text-center">
            
            Accelerate Your Growth With <span style={{fontWeight:'400'}}>First Certification</span>
-            </h1>
+            </h2>
 
           </Container>
 

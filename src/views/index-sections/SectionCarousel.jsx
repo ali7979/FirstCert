@@ -19,28 +19,29 @@ import {
 const items = [
   {
     src: require("assets/img/labs.jpg"),
-    altText: "Labs",
-    caption: ""
+    altText: "Labs certification",
+    caption:""
   },
   {
     src: require("assets/img/it security.jpg"),
-    altText: "Here it is",
-    caption: ""
+    altText: "IT Security certification",
+    caption:""
   },
   {
     src: require("assets/img/Infrastructure and Manufacturing.jpg"),
-    altText: "Somewhere",
-    caption: "You can use Cursor to scroll"
+    altText: "Infrastructure and Manufacturing certification",
+    caption:""
+ 
   },
   {
     src: require("assets/img/it.jpg"),
-    altText: "Somewhere else",
-    caption: "You can use Cursor to scroll"  },
+    altText: "Info Tech certification",
+    caption:"" },
 
   {
     src: require("assets/img/food.jpg"),
-    altText: "Here it is",
-    caption: "You can use Cursor to scroll"  }
+    altText: "Food certification",
+    caption:""  }
 ];
 
 function SectionCarousel() {

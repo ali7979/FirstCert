@@ -9,7 +9,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 import {
   Button,
-  CardImg,
+  
   Container,
   Row,
   Col
@@ -28,9 +28,12 @@ function Cmmi() {
       <Container style={{marginTop:"7em"}}>
   <Row >
     <Col md="6" className='mt-5 mb-4'>
-      {/* Add your image here */}
-      <img  src={cmmi} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  src={cmmi} alt="cmmi certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
     <Col md="6" className='my-auto'>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >CMMI Certifications</h1>
@@ -42,7 +45,7 @@ function Cmmi() {
   </Row>
 <Row className='mt-md-5'>
 <Col md="6" className='my-auto' data-aos="zoom-out-left">
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits of CMMI Certification</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits of CMMI Certification</h2>
 
 <ol style={{lineHeight: "1", margin: "0"}}>
   <li className="mt-2" style={{fontWeight:"bold", margin: "0"}}><h5 style={{fontWeight:'400', margin: "0"}}>Improved efficiency and productivity.</h5></li>
@@ -79,11 +82,15 @@ CMMI Certification involves a rigorous assessment of the organization's processe
   </Col>
 
 </Row>
-<Row className="mt-3 mx-auto" >  <h1 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>CMMI CERTIFICATION?</span></h1>
+<Row className="mt-3 mx-auto" >  <h2 style={{letterSpacing:'2px',wordSpacing:'3px'}} >Who Can Get <span style={{fontWeight:'500'}}>CMMI CERTIFICATION?</span></h2>
   <Col md="5"className='mt-5'>
       {/* Add your image here */}
-      <img   data-aos="zoom-out-down" src={think} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img   data-aos="zoom-out-down" src={think} alt="certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
   </Col>
 
   <Col md="7" className='my-auto blurbox' data-aos="fade-down">

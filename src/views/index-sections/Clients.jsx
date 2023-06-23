@@ -20,50 +20,50 @@ function Clients() {
             <div className="slider">
 	<div className="slide-track">
 		<div className="slide">
-			<img src={c1} height="100" width="120" alt="" />
+			<img src={c1} height="100" width="120" alt="barricade protection agency" />
 		</div>
 		<div className="slide">
-			<img loading="lazy" src="https://briskintegrated.com/wp-content/uploads/2020/03/brisk-logo-two.png" height="100" width="250" alt="" />
+			<img loading="lazy" src="https://briskintegrated.com/wp-content/uploads/2020/03/brisk-logo-two.png" height="100" width="250" alt="brisk" />
 		</div>
 		<div className="slide">
-			<img loading="lazy"  src="https://lh3.googleusercontent.com/p/AF1QipPs6OZVOglrTw4_rJdTWdJcUKS7zaFpq7PwSWE=s1360-w1360-h1020" height="100" width="200" alt="" />
+			<img loading="lazy"  src="https://lh3.googleusercontent.com/p/AF1QipPs6OZVOglrTw4_rJdTWdJcUKS7zaFpq7PwSWE=s1360-w1360-h1020" height="100" width="200" alt="chegus infotech" />
 		</div>
 		<div className="slide">
-			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="200" alt="" />
+			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="200" alt="esthenos" />
 		</div>
 		<div className="slide">
-			<img loading="lazy"  src={c2} height="100" width="220" alt="" />
+			<img loading="lazy"  src={c2} height="100" width="220" alt="paralok" />
 		</div>
 		
 		<div className="slide">
-        <img loading="lazy"  src={c3} height="100" width="200" alt="" />
+        <img loading="lazy"  src={c3} height="100" width="200" alt="oasis" />
 		</div>
 
         <div className="slide">
-        <img loading="lazy"  src="https://www.primedtalent.com/Assets/Images/logo.png" height="80" width="200" alt="" />
+        <img loading="lazy"  src="https://www.primedtalent.com/Assets/Images/logo.png" height="80" width="200" alt="primed talent" />
 		</div>
 
 		<div className="slide">
-			<img loading="lazy"  src={c1} height="100" width="120" alt="" />
+			<img loading="lazy"  src={c1} height="100" width="120" alt="barricade protection agency" />
 		</div>
 		<div className="slide">
-        <img loading="lazy"  src="https://briskintegrated.com/wp-content/uploads/2020/03/brisk-logo-two.png" height="100" width="250" alt="" />
+        <img loading="lazy"  src="https://briskintegrated.com/wp-content/uploads/2020/03/brisk-logo-two.png" height="100" width="250" alt="brisk" />
 		</div>
 		<div className="slide">
-			<img loading="lazy"  src="https://lh3.googleusercontent.com/p/AF1QipPs6OZVOglrTw4_rJdTWdJcUKS7zaFpq7PwSWE=s1360-w1360-h1020" height="100" width="150" alt="" />
+			<img loading="lazy"  src="https://lh3.googleusercontent.com/p/AF1QipPs6OZVOglrTw4_rJdTWdJcUKS7zaFpq7PwSWE=s1360-w1360-h1020" height="100" width="150" alt="chegus infotech" />
 		</div>
 		
         <div className="slide">
-			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="250" alt="" />
+			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="250" alt="esthenos" />
 		</div>
 		<div className="slide">
-			<img loading="lazy"  src={c2} height="100" width="220" alt="" />
+			<img loading="lazy"  src={c2} height="100" width="220" alt="paralok" />
 		</div>
 		<div className="slide">
-			<img loading="lazy"  src={c3} height="100" width="250" alt="" />
+			<img loading="lazy"  src={c3} height="100" width="250" alt="oasis" />
 		</div>
 		<div className="slide">
-			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="250" alt="" />
+			<img loading="lazy"  src="https://nocpl.esthenos.com/static/img/logo-icon.png" height="100" width="250" alt="primed talent" />
 		</div>
 	</div>
 </div>

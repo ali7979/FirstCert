@@ -5,12 +5,7 @@ import 'aos/dist/aos.css'
 import Aos from 'aos';
 import aboutus from '../../assets/img/about us.png'
 import {
-    Button,
-    Form,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
+   
     Container,
     Row,
     Col
@@ -29,8 +24,12 @@ function AboutUs() {
   <Row className='mt-4'>
     <Col md="6" data-aos="zoom-in-down" >
       {
-      <img  loading="lazy"  src={aboutus} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/> }
+      <img  loading="lazy"  src={aboutus} alt="firstcert aboutus" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/> }
     </Col>
     <Col md="6" data-aos="zoom-out-down">
     <h1 style={{fontFamily: "'Raleway', sans-serif",letterSpacing:"2px",fontWeight:"600",color:"#51cbce"}}>About FirstCert</h1>

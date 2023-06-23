@@ -10,7 +10,6 @@ import { Card, CardHeader,CardBody, CardTitle, CardSubtitle, CardText, CardLink 
 
 import {
   Button,
-  CardImg,
   Container,
   Row,
   Col
@@ -32,8 +31,12 @@ function Iso22000() {
  
     <Col md="6" >
       {/* Add your image here */}
-      <img  src={iso22000} alt="Your Image" style={{ maxWidth: "100%",
-  height: "auto"}}/>
+      <img  src={iso22000} alt="iso22000 certification" style={{ maxWidth: "100%",
+  height: "auto",  transition: "transform 0.3s ease-in-out",
+}}
+onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
+onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
+/>
     </Col>
     <Col md="6" className='my-auto'>
       <h1 className="text-left ml-md-5" style={{fontFamily: "'Raleway', sans-serif",fontWeight:"900"}} >ISO 22000 Certifications</h1>
@@ -48,7 +51,7 @@ function Iso22000() {
 
 
   <Col md="6" className='my-auto' data-aos="zoom-out-left">
-<h1 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Organization</h1>
+<h2 style={{fontWeight:"bold",fontFamily:"'Raleway', sans-serif",letterSpacing:"1px"}}>Benefits to your Organization</h2>
 
 <ol style={{lineHeight: "1", margin: "0", paddingLeft: "20px"}}>
   <li style={{fontWeight:'bold'}}><h5 style={{fontWeight:'400',marginTop:'1em'}}>Continued Improvement – Enhanced system due to internal audits and better control of hazards.</h5></li>
