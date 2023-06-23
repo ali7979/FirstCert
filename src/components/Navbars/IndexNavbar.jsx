@@ -81,7 +81,7 @@ function IndexNavbar() {
             title="First Cert"
             style={{ display: "flex", alignItems: "center", letterSpacing: "4px" }}
           >
-            <img src={logo} style={{ height: "100%", width: "5.5em", }} />
+            <img src={logo} style={{ height: "100%", width: "5.5em"}} alt="First Cert Logo" />
             <div style={{ marginLeft: "1em", fontFamily: "serif", color: theme ? "white" : "black" }}>
               <span style={{ fontSize: '1.4em' }}>First Cert</span>
               <h6 style={{ fontFamily: '"Montserrat", "Helvetica", Arial, sans-serif', fontWeight: "700", marginTop: "-0em", letterSpacing: "1px", color: "#51cbce" }}>Accelerating your growth</h6>
