@@ -90,7 +90,7 @@ function DemoFooter() {
             <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
             <p  style={{color:'black', fontWeight:'500'}}><i className="fas fa-home mr-3"></i> Bangalore, India</p>
             <p style={{color:'black'}}><i className="fas fa-envelope mr-3"></i> <a  style={{color:'black', fontWeight:'500'}} href="https://mail.google.com/mail/?view=cm&to=info@firstcertification.com" 
->info@firstcertificationcom </a></p>
+>info@firstcertification.com </a></p>
             <p  style={{color:'black', fontWeight:'500'}}><i className="fas fa-phone mr-3" ></i> +91 8073358319</p>
           </div>
         </div>
