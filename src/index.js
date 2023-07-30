@@ -26,6 +26,8 @@ import Soc from "views/services/cybersecurity/Soc";
 import Vapt from "views/services/cybersecurity/Vapt";
 import CeMarking from "views/services/CeMarking";
 import ServicesPage from "views/services/ServicesPage";
+import PrivacyPolicy from "views/index-sections/PrivacyPolicy";
+import TermsNConditions from "views/index-sections/TermsNConditions";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 export const ThemeContext = createContext();
@@ -40,6 +42,8 @@ const App = () => {
         <Switch>
           <Route exact path="/" render={(props) => <Index {...props} />} />
           <Route path="/aboutus" render={(props) => <AboutUs />} />
+          <Route path="/privacypolicy" render={(props) => <PrivacyPolicy />} />
+          <Route path="/tnc" render={(props) => <TermsNConditions />} />
           <Route path="/contact" render={(props) => <ContactUs />} />
           <Route path="/quality" render={(props) => <Quality />} />
           <Route path="/cmmi" render={(props) => <Cmmi />} />

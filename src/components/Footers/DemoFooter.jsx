@@ -51,7 +51,12 @@ function DemoFooter() {
             <p>
             <NavLink  style={{fontWeight:'500',color:'black'}} to="/services"> Services</NavLink>
             </p>
-           
+            <p>
+            <NavLink  style={{fontWeight:'500',color:'black'}} to="/privacypolicy"> Privacy Policy</NavLink>
+            </p>
+            <p>
+            <NavLink  style={{fontWeight:'500',color:'black'}} to="/tnc"> Terms & Conditions</NavLink>
+            </p>
           </div>
 
           <hr className="w-100 clearfix d-md-none" />
