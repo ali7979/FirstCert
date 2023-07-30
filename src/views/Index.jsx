@@ -13,7 +13,6 @@ function Index() {
  
   return (
     <>
-
       <IndexNavbar />
       
       <IndexHeader />
