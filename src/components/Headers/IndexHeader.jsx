@@ -22,10 +22,11 @@ function IndexHeader() {
   const { theme, settheme } = useContext(ThemeContext);
 
   const scrollToSection = () => {
-    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    history.push('./contact')
   };
   return (
     <>
+    
       <div
   className="page-header section-dark"
   style={{
@@ -64,7 +65,7 @@ function IndexHeader() {
         <h4 className="category category-absolute " style={{fontSize:"1.5em"}}>
 
         
-         What are You Waiting for ?     <Button  color='primary'  className="blurbox btn-round" onClick={scrollToSection}>Get Started<i className="nc-icon nc-minimal-right" aria-hidden="true"></i></Button>
+         Get a Free Quote     <Button  color='primary'  className="blurbox btn-round" onClick={scrollToSection}>Contact Us  <i className="nc-icon nc-minimal-right" aria-hidden="true"></i></Button>
  
           
          

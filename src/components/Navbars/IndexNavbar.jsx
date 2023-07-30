@@ -71,7 +71,12 @@ function IndexNavbar() {
 
 
   return (
+    <>
+    <a href="tel:+918073358319">
+     <div style={{paddingTop:"3px",textAlign:"center",fontFamily: '"Montserrat", "Helvetica", Arial, sans-serif',backgroundColor:"#1A5F7A",color:"white"}}>  <i className="fa fa-phone" /> Phone: +91 8073358319</div>
+     </a>
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
+      
       <Container>
         <div className="navbar-translate">
           <NavbarBrand
@@ -352,6 +357,7 @@ function IndexNavbar() {
         </Collapse>
       </Container>
     </Navbar>
+    </>
   );
 }
 
