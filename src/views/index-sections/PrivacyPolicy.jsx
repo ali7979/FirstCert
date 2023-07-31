@@ -23,7 +23,7 @@ function PrivacyPolicy() {
               <br/>
               
                 <h6 className='text-middle ' style={{ textAlign:"center", textTransform: "capitalize" ,letterSpacing:"0.8px",fontWeight:"500"}}>
-                Your privacy is important to us, so Top Certifier has created this Privacy Policy to explain how your information is protected, collected and used. This Privacy Policy applies to all Top Certifier web sites, including our publicly accessible web sites located at Top Certifier sub domain.
+                Your privacy is important to us, so First Cert has created this Privacy Policy to explain how your information is protected, collected and used. This Privacy Policy applies to all Top Certifier web sites, including our publicly accessible web sites located at Top Certifier sub domain.
                 <br/>
                 <br/>
 
