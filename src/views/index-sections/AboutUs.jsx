@@ -1,6 +1,5 @@
 import DemoFooter from 'components/Footers/DemoFooter'
 import IndexNavbar from 'components/Navbars/IndexNavbar'
-import { Link } from "react-router-dom";
 
 import React, { useEffect } from 'react'
 import 'aos/dist/aos.css'
@@ -48,6 +47,21 @@ onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
 </Container>
 
         </div>
+        <div
+        className="whatsapp-icon"
+        style={{
+          position: "fixed",
+          bottom: "30px",
+          left: "30px",
+          zIndex: "999",
+          fontSize:"2rem"
+         
+        }}
+      >
+        <a style={{zIndex:"999"}} href="https://api.whatsapp.com/send?phone=918073358319&text=Hi FirstCert! I want to know your Services " target="_blank" rel="noopener noreferrer">
+          <i style={{ color:"#25d366"}} className="fab fa-whatsapp" />
+        </a>
+      </div>
       <DemoFooter/>
     </div>
   )

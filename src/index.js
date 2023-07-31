@@ -64,6 +64,7 @@ const App = () => {
         </Switch>
       </ThemeContext.Provider>
     </BrowserRouter>
+    
   );
 };
 
