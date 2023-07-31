@@ -14,7 +14,7 @@ function TermsNConditions() {
     <div className='section'>
   <Container>
     <Row>
-      <Col md="12" className='text-middle mt-4'>
+      <Col md="12" className='text-middle mt-5'>
         <h2 style={{ fontFamily: "'Raleway', sans-serif", fontWeight: "500", color: "#51cbce", letterSpacing: "5px", textAlign: "center" }}>
           Terms And Conditions
         </h2>
