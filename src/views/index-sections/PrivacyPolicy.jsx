@@ -23,20 +23,20 @@ function PrivacyPolicy() {
               <br/>
               
                 <h6 className='text-middle ' style={{ textAlign:"center", textTransform: "capitalize" ,letterSpacing:"0.8px",fontWeight:"500"}}>
-                Your privacy is important to us, so First Cert has created this Privacy Policy to explain how your information is protected, collected and used. This Privacy Policy applies to all Top Certifier web sites, including our publicly accessible web sites located at Top Certifier sub domain.
+                Your privacy is important to us, so First Cert has created this Privacy Policy to explain how your information is protected, collected and used. This Privacy Policy applies to all First Cert web sites, including our publicly accessible web sites located at First Cert sub domain.
                 <br/>
                 <br/>
 
-This Privacy Policy may be updated from time to time. By using Top Certifier, you consent to the terms and conditions of this Privacy Policy and are aware that our policies may evolve in the future. If there is a conflict between our Terms of Use governing your use of the sites and this Privacy Policy, the Terms of Use control.
+This Privacy Policy may be updated from time to time. By using First Cert, you consent to the terms and conditions of this Privacy Policy and are aware that our policies may evolve in the future. If there is a conflict between our Terms of Use governing your use of the sites and this Privacy Policy, the Terms of Use control.
 <br/>
 <br/>
 
 <h5 style={{fontWeight:"500"}}>Collection</h5>
-Information posted on Top Certifier is obviously publicly available. Our servers are located in the United States and in the European Union. Therefore, if you choose to provide us with personal information, you are consenting to the transfer and storage of that information on our servers in the United States and Europe. We collect and store the following personal information:
+Information posted on First Cert is obviously publicly available. Our servers are located in the United States and in the European Union. Therefore, if you choose to provide us with personal information, you are consenting to the transfer and storage of that information on our servers in the United States and Europe. We collect and store the following personal information:
 
 Email address, physical contact information, and (depending on the service used) sometimes financial information.
 
-Computer sign-on data, statistics on page views, traffic to and from Top Certifier and ad data (all through cookies - you can take steps to disable the cookies on your browser although this is likely to affect your ability to use the site).
+Computer sign-on data, statistics on page views, traffic to and from First Cert and ad data (all through cookies - you can take steps to disable the cookies on your browser although this is likely to affect your ability to use the site).
 
 Other information, including your IP address and standard web log information.
 
@@ -54,7 +54,7 @@ Service providers who help with our business operations.
 <br/>
 <h5 style={{fontWeight:"500"}}>
 Using Information</h5>
-You may use personal information gathered from Top Certifier only to follow up with another user about a specific posting, not to send spam or collect personal information from someone who hasn't agreed to that.
+You may use personal information gathered from First Cert only to follow up with another user about a specific posting, not to send spam or collect personal information from someone who hasn't agreed to that.
 
 <br/>
 <br/>
